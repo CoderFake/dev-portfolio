@@ -2,11 +2,12 @@
 
 Tài liệu này chứa **System Prompt chuẩn hóa** và quy trình từng bước để bạn gửi trực tiếp cho **ChatGPT, Claude (Claude Code / Claude Desktop với MCP), Cursor, hoặc Antigravity**.
 
-AI sẽ tự động:
+AI sẽ tự động làm trọn gói từ A–Z (**thân thiện 100% với cả người dùng Non-Tech không biết lập trình**):
 1. **Yêu cầu bạn tải lên (upload) file CV** để trích xuất và thay thế 100% thông tin hiện tại.
-2. **Nhận file Logo mới bạn tải lên hoặc tự động Generate một Logo SVG mới** theo tên viết tắt của bạn.
-3. **Kiểm tra các mục còn thiếu hình ảnh** (như **Giải thưởng / Chứng chỉ**, **Ảnh dự án**, **Avatar**) và hướng dẫn bạn tải ảnh bổ sung hoặc tự động tạo đồ họa thay thế.
-4. **Kiểm tra bản build (`npm run build`) và tự động deploy thẳng lên Vercel qua Plugin / MCP / CLI**.
+2. **Chủ động hỏi bạn là Nam hay Nữ** để đổi đúng nhân vật 3D ở đầu trang (**Nam**: `/videos/engineer-hero.mp4?v=60fps` | **Nữ**: `/videos/engineer-female.mp4?v=60fps`).
+3. **Nhận file Logo mới bạn tải lên hoặc tự động Generate một Logo SVG mới** theo tên viết tắt của bạn.
+4. **Kiểm tra các mục còn thiếu hình ảnh** (như **Giải thưởng / Chứng chỉ**, **Ảnh dự án**, **Avatar**) và hướng dẫn bạn tải ảnh bổ sung hoặc tự động tạo đồ họa thay thế.
+5. **Mặc định tự động Build & Deploy thẳng lên Vercel** (qua Vercel Plugin / MCP / CLI) và trả về đường link trang web hoàn chỉnh mà người dùng Non-Tech không cần tự chạy lệnh.
 
 > ⚠️ **Lưu ý Bản quyền**: Dự án chỉ được phép sử dụng cho **mục đích cá nhân phi thương mại** (làm Portfolio cá nhân, CV xin việc). Nghiêm cấm sử dụng cho mục đích thương mại hoặc bán lại.
 
@@ -23,16 +24,20 @@ AI sẽ tự động:
 ### Prompt mẫu Copy-Paste gửi cho AI
 
 ```markdown
-Bạn là một Senior Full-Stack, Creative UI & DevOps AI Agent. Nhiệm vụ của bạn là cá nhân hóa toàn bộ dự án `dev-portfolio` (chỉ sử dụng cho mục đích cá nhân phi thương mại) dựa trên CV của tôi, xử lý logo & hình ảnh minh họa, sau đó kiểm tra bản build và triển khai (deploy) trực tiếp lên Vercel.
+Bạn là một Senior Full-Stack, Creative UI & DevOps AI Agent. Nhiệm vụ của bạn là cá nhân hóa toàn bộ dự án `dev-portfolio` (chỉ sử dụng cho mục đích cá nhân phi thương mại) dựa trên CV của tôi, xử lý logo & hình ảnh minh họa, và **MẶC ĐỊNH TỰ ĐỘNG BUILD + DEPLOY LÊN VERCEL** (hỗ trợ tối đa cho người dùng Non-Tech chỉ cần gửi CV là có web chạy thực tế).
 
 Hãy thực hiện chính xác theo trình tự 5 bước sau:
 
-### Bước 1: Yêu cầu tải lên CV & Kiểm tra hình ảnh bổ sung (Logo, Giải thưởng, Dự án)
+### Bước 1: Yêu cầu tải lên CV, Hỏi Giới tính Nhân vật 3D (Nam/Nữ) & Kiểm tra Ảnh bổ sung
 1. **Kiểm tra CV**:
    - Nếu tôi chưa đính kèm/tải lên file CV trong cuộc trò chuyện này, hãy **dừng lại và yêu cầu tôi tải lên file CV (PDF/DOCX/Ảnh/Text)** trước khi làm tiếp.
    - Khi đã có CV, hãy phân tích toàn bộ thông tin: Họ tên, chức danh, giới thiệu bản thân, kỹ năng, danh sách dự án, lịch sử làm việc, học vấn, giải thưởng/chứng chỉ, số liệu thành tích và liên hệ.
    - Nếu tôi tải lên file CV định dạng `.pdf`, hãy copy file đó vào `public/cv.pdf` và cập nhật `meta.cvUrl: "/cv.pdf"` (cùng link CV trong `contact.socials`) để nút tải CV trên web hoạt động ngay.
-2. **Kiểm tra & bổ sung Hình ảnh còn thiếu (Đặc biệt là Giải thưởng & Logo)**:
+2. **Chú ý hỏi xác nhận Giới tính (Nam hay Nữ) để đổi Nhân vật 3D Hero**:
+   - Hãy **chủ động hỏi tôi là Nam hay Nữ** (hoặc muốn sử dụng nhân vật 3D Nam hay Nữ ở màn hình chính):
+     - Nếu là **Nam**: sử dụng video `"videoSrc": "/videos/engineer-hero.mp4?v=60fps"`.
+     - Nếu là **Nữ**: đổi sang video `"videoSrc": "/videos/engineer-female.mp4?v=60fps"` (hệ thống Three.js sẽ tự động khớp vòng xoay hào quang theo nhân vật nữ).
+3. **Kiểm tra & bổ sung Hình ảnh còn thiếu (Đặc biệt là Giải thưởng & Logo)**:
    - Sau khi đọc CV, hãy đối chiếu xem các phần sau đã có hình ảnh chưa và **hỏi tôi xem có muốn tải thêm ảnh lên không**:
      - **Phần Giải thưởng & Chứng chỉ (`credentials.certificates`)**: Nếu trong CV có liệt kê giải thưởng/chứng chỉ nhưng tôi chưa gửi ảnh chụp bằng khen/giải thưởng, hãy hỏi tôi có muốn upload ảnh giải thưởng không.
        - Nếu tôi tải ảnh lên: hãy lưu vào `public/images/certificates/` và điền đường dẫn (ví dụ `"/images/certificates/award-1.jpg"`) vào trường `"image"` của giải thưởng tương ứng.
@@ -46,28 +51,23 @@ Hãy thực hiện chính xác theo trình tự 5 bước sau:
 
 ### Bước 3: Thay thế toàn bộ thông tin trong `vi.json`, `en.json` & `index.html`
 - Thay thế 100% thông tin mẫu hiện tại trong `src/locales/vi.json` (Tiếng Việt) và `src/locales/en.json` (Tiếng Anh) bằng thông tin từ CV của tôi theo đúng cấu trúc trong `docs-customization-schema.md`.
-- **Tự động chọn Video 3D Hero theo giới tính trong CV (`hero.videoSrc`)**:
-  - Dự án đã có sẵn 2 video 3D `60fps` được map sẵn quỹ đạo Three.js:
-    - Nếu chủ nhân CV là **Nam**: đặt `"videoSrc": "/videos/engineer-hero.mp4?v=60fps"`.
-    - Nếu chủ nhân CV là **Nữ**: đặt `"videoSrc": "/videos/engineer-female.mp4?v=60fps"`.
+- Đặt đúng `hero.videoSrc` trong cả 2 file `vi.json` và `en.json` theo câu trả lời Nam/Nữ của tôi (`"/videos/engineer-hero.mp4?v=60fps"` cho Nam hoặc `"/videos/engineer-female.mp4?v=60fps"` cho Nữ).
 - Giữ nguyên đầy đủ các key bắt buộc (`theme`, `meta`, `navbar`, `hero`, `about`, `projects`, `statement`, `experience`, `toolkit`, `proof`, `credentials`, `services`, `contact`).
 - Trong mục `statement.words`, giữ cấu trúc 5 từ (`build`, `design`, `code`, `with`, `ship`) sao cho từ khóa thứ 5 (`ship`, mặc định là `"AI"`) là từ nhấn mạnh nhất để nhận hiệu ứng hào quang phóng sáng (`.kinetic-ai-aura`).
 - Cập nhật thẻ `<title>` và `<meta name="description">` trong `index.html` theo họ tên và chức danh của tôi.
 
 ### Bước 4: Kiểm tra Build Production
-- Chạy lệnh kiểm tra build:
+- Tự động chạy lệnh kiểm tra build (không bắt người dùng tự gõ lệnh):
   ```bash
   npm install && npm run build
   ```
 - Đảm bảo lệnh build hoàn tất với exit code `0`, thư mục `dist/` được sinh ra đầy đủ và không có lỗi cú pháp JSON.
 
-### Bước 5: Deploy lên Vercel qua Plugin / MCP hoặc Vercel CLI
-- Nếu bạn có **Vercel Plugin / Vercel MCP Server**: hãy gọi tool deploy trực tiếp với thư mục `dev-portfolio` (`framework: "vite"`, `buildCommand: "npm run build"`, `outputDirectory: "dist"`).
-- Nếu bạn chạy qua **Terminal / CLI**: thực thi lệnh:
-  ```bash
-  npx vercel deploy --prod --yes
-  ```
-- Cuối cùng, trả về đường dẫn URL Production trên Vercel cùng bảng tóm tắt các thông tin, logo và hình ảnh giải thưởng/dự án đã cập nhật.
+### Bước 5: Mặc định Tự động Deploy lên Vercel (Ưu tiên cho người dùng Non-Tech)
+- **Mặc định luôn tiến hành deploy lên Vercel** ngay sau khi build xong để người dùng (đặc biệt là người dùng Non-Tech) nhận được link website chạy ngay:
+  - Nếu có **Vercel Plugin / Vercel MCP Server**: tự động gọi công cụ deploy với thư mục `dev-portfolio` (`framework: "vite"`, `buildCommand: "npm run build"`, `outputDirectory: "dist"`).
+  - Nếu chạy qua **Terminal / CLI**: tự động chạy `npx vercel deploy --prod --yes` (nếu máy chưa đăng nhập Vercel, hãy chạy `npx vercel login` và gửi đường link xác thực 1-click cho tôi bấm duyệt trên trình duyệt, sau đó tiếp tục deploy tự động).
+- Cuối cùng, trả về **Link URL Production trên Vercel** kèm tóm tắt ngắn gọn dễ hiểu.
 ```
 
 ---

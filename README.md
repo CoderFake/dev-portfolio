@@ -9,7 +9,7 @@ Một template Portfolio 3D tương tác hiệu năng cao dành cho **AI Enginee
 ## ✨ Tính năng nổi bật
 
 - **100% JSON-Driven (Đa ngôn ngữ VI / EN)**: Không cần sửa code React khi thay đổi thông tin cá nhân — chỉ cần cập nhật `src/locales/vi.json` và `src/locales/en.json`.
-- **Tự động hóa hoàn toàn với AI Agent**: Chỉ cần tải CV lên, AI sẽ tự động trích xuất thông tin, tự động tạo (generate) Logo SVG theo tên viết tắt của bạn (hoặc nhận logo bạn tải lên), và nhắc bổ sung ảnh giải thưởng / dự án nếu thiếu.
+- **Tự động hóa hoàn toàn với AI Agent (Hỗ trợ cả người dùng Non-Tech)**: Chỉ cần tải CV lên, AI sẽ chủ động hỏi bạn là **Nam hay Nữ** để đổi đúng nhân vật 3D (`engineer-hero.mp4` hoặc `engineer-female.mp4`), tự động tạo (generate) Logo SVG theo tên viết tắt của bạn, nhắc bổ sung ảnh giải thưởng / dự án nếu thiếu, và **mặc định tự động chạy deploy lên Vercel** để trả về link web hoàn chỉnh.
 - **Sân khấu Hero 3D + Three.js AGI Telemetry Core**: Hỗ trợ video 3D `16:9` (`60fps`), ảnh tĩnh hoặc mô hình `.glb`/`.gltf`, kết hợp vòng xoay hào quang Three.js tự động bám theo chuyển động nhân vật theo thời gian thực.
 - **Rust + WebAssembly (SIMD128) 3D Star Network**: Hệ thống 1,800 hạt sao & mạng lưới chòm sao 3D ở các section bên dưới được tính toán vật lý bằng **Rust biên dịch sang WebAssembly** (`public/wasm/star_network_engine.wasm`), truyền bộ đệm zero-copy trực tiếp sang GPU.
 - **10 Section Scrollytelling mượt mà (GSAP ScrollTrigger + Lenis)**:
@@ -61,7 +61,7 @@ Dự án đi kèm bộ tài liệu `docs-*.md` được thiết kế chuẩn hó
 
 | File tài liệu | Mục đích sử dụng |
 | :--- | :--- |
-| 📄 **[`docs-ai-agent-prompt.md`](./docs-ai-agent-prompt.md)** | **Prompt mẫu Copy-Paste cho ChatGPT / Claude**: Hướng dẫn AI yêu cầu bạn tải CV lên, tự động thay thế toàn bộ thông tin, tạo mới hoặc thay logo dự án, bổ sung ảnh giải thưởng/dự án còn thiếu, kiểm tra build và deploy lên Vercel qua Plugin / MCP / CLI. |
+| 📄 **[`docs-ai-agent-prompt.md`](./docs-ai-agent-prompt.md)** | **Prompt mẫu Copy-Paste cho ChatGPT / Claude**: Hướng dẫn AI yêu cầu bạn tải CV lên, hỏi xác nhận giới tính (Nam/Nữ) để đổi nhân vật 3D, tạo/thay logo dự án, bổ sung ảnh giải thưởng còn thiếu, và **mặc định tự động deploy lên Vercel** (cho cả người dùng Non-Tech). |
 | 📄 **[`docs-customization-schema.md`](./docs-customization-schema.md)** | **Đặc tả cấu trúc dữ liệu JSON, Logo & Hình ảnh**: Giải thích chi tiết từng trường trong `src/locales/vi.json`, `src/locales/en.json`, cách đổi/gen logo thương hiệu, gắn ảnh giải thưởng (`credentials.certificates[].image`), ảnh/logo dự án (`projects.items[].image`) và 11 loại thẻ Cyber-AI Poster. |
 | 📄 **[`docs-vercel-deploy.md`](./docs-vercel-deploy.md)** | **Hướng dẫn Build & Deploy lên Vercel**: Quy trình deploy tự động qua Vercel Plugin / MCP Server, Vercel CLI (`npx vercel --prod`), hoặc GitHub CI/CD. |
 

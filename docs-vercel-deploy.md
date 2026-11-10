@@ -2,8 +2,11 @@
 
 Dự án đã được cấu hình sẵn file [`vercel.json`](./vercel.json) ở thư mục gốc (`dev-portfolio/vercel.json`) để xử lý trọn vẹn:
 - Header `Content-Type: application/wasm` cho nhân vật lý Rust + WebAssembly (`public/wasm/star_network_engine.wasm`).
-- Bộ nhớ đệm `Cache-Control: immutable` cho video 3D Hero (`public/videos/engineer-hero.mp4`).
+- Bộ nhớ đệm `Cache-Control: immutable` cho video 3D Hero (`public/videos/engineer-hero.mp4` & `public/videos/engineer-female.mp4`).
 - Điều hướng SPA (`rewrites` về `/index.html`).
+
+> 💡 **Mặc định dành cho người dùng Non-Tech (Không rành kỹ thuật)**:
+> Khi người dùng tải CV lên cho **ChatGPT, Claude, Cursor hoặc Antigravity**, AI Agent **mặc định sẽ tự động chạy Build & Deploy lên Vercel** (theo Cách 1 hoặc Cách 2 bên dưới) mà không bắt người dùng phải tự mở Terminal hay cài đặt phức tạp. Người dùng chỉ cần nhận đường link `.vercel.app` sau khi AI hoàn tất.
 
 Dưới đây là 3 cách để **AI Agent (ChatGPT, Claude, Cursor, Antigravity)** hoặc lập trình viên triển khai trang web lên **Vercel**.
 

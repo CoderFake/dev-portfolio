@@ -76,10 +76,10 @@ Các giá trị `defaultPreset` được hỗ trợ sẵn (người dùng cũng 
   "scrollHint": "SCROLL TO EXPLORE ↓"
 }
 ```
-- **Lưu ý về phương tiện hiển thị (`videoSrc` / `modelSrc`)**:
-  - Dự án tích hợp sẵn **2 video 3D `60fps`** đã được map sẵn quỹ đạo bám mặt Three.js AGI Halo:
-    - **Nam Developer**: `"/videos/engineer-hero.mp4?v=60fps"`
-    - **Nữ Developer**: `"/videos/engineer-female.mp4?v=60fps"`
+- **Lưu ý quan trọng về nhân vật 3D Hero (`videoSrc` / `modelSrc`) — Chú ý hỏi Nam hay Nữ**:
+  - AI Agent khi đọc CV **phải chủ động hỏi xác nhận người dùng là Nam hay Nữ** để đổi đúng nhân vật 3D (đã được xử lý `60fps` và map sẵn quỹ đạo bám mặt Three.js AGI Halo):
+    - **Nam (`Male`)**: đặt `"videoSrc": "/videos/engineer-hero.mp4?v=60fps"`
+    - **Nữ (`Female`)**: đặt `"videoSrc": "/videos/engineer-female.mp4?v=60fps"`
   - Nếu dùng ảnh tĩnh (`.png`, `.jpg`, `.webp`): đặt đường dẫn ảnh tại `hero.videoSrc`, component `HeroSection` sẽ tự động chuyển sang thẻ `<img>`.
   - Nếu dùng mô hình 3D (`.glb`, `.gltf`): thêm trường `"modelSrc": "/models/character.glb"`.
 
