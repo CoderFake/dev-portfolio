@@ -1,0 +1,491 @@
+{
+  "theme": {
+    "defaultPreset": "cyber-agi"
+  },
+  "meta": {
+    "lang": "vi",
+    "title": "Hoàng Văn Điệu — Kỹ sư AI & Lập trình viên Backend",
+    "description": "Portfolio của Hoàng Văn Điệu (HOANGDIEUIT) — Kỹ sư AI & Lập trình viên Backend chuyên về FastAPI, Django, LLM, RAG và hệ thống Multi-Agent.",
+    "brandName": "HOANGDIEU",
+    "brandDot": ".",
+    "shortMark": "HVD®",
+    "logoSrc": "/logo-cf.svg",
+    "avatarSrc": "/images/avatar.jpg",
+    "cvUrl": "https://s3.hoangdieuit.io.vn/portfolio-uploads/cv/96b004ead99f.pdf",
+    "email": "hoangdieu22022002@gmail.com",
+    "phone": "0387 367 162",
+    "location": "Mễ Trì Thượng, Từ Liêm, Hà Nội",
+    "websiteUrl": "https://hoangdieuit.io.vn"
+  },
+  "navbar": {
+    "homeAria": "Trang chủ Hoàng Văn Điệu",
+    "languageAria": "Chọn ngôn ngữ",
+    "toggleMenuAria": "Mở hoặc đóng menu điều hướng",
+    "contactCta": "Liên hệ",
+    "contactHref": "mailto:hoangdieu22022002@gmail.com",
+    "links": [
+      { "label": "Giới thiệu", "href": "#about" },
+      { "label": "Dự án", "href": "#projects" },
+      { "label": "Kinh nghiệm", "href": "#experience" },
+      { "label": "Kỹ năng", "href": "#skills" },
+      { "label": "Giải thưởng", "href": "#certificates" },
+      { "label": "Dịch vụ", "href": "#services" },
+      { "label": "Liên hệ", "href": "#contact" }
+    ]
+  },
+  "hero": {
+    "kicker": "KỸ SƯ AI · BACKEND, LLM & HỆ THỐNG ĐA TÁC NHÂN",
+    "titleLineOne": "HOANG VAN",
+    "titleLineTwo": "DIEU",
+    "showPeriod": true,
+    "bio": "Tại WeUpBook, tôi thiết kế và vận hành các hệ thống AI Agent, RAG và microservices backend ở quy mô sản xuất — kết hợp nền tảng Python (FastAPI, Django) vững chắc với trí tuệ LLM từ kiến trúc đến ngày phát hành.",
+    "cvLabel": "XEM HỒ SƠ CV (PDF)",
+    "videoSrc": "/videos/engineer-hero.mp4?v=60fps",
+    "videoAriaLabel": "Hoàng Văn Điệu làm việc cùng hệ thống AI và Backend",
+    "scrollTarget": "#projects",
+    "scrollButtonAria": "Cuộn xuống dự án tiêu biểu",
+    "indexLeft": "01 — 08",
+    "scrollHint": "SCROLL TO EXPLORE ↓"
+  },
+  "about": {
+    "eyebrow": "01 / GIỚI THIỆU",
+    "verticalMark": "HVD®",
+    "headingLineOne": "KIẾN TRÚC MỞ RỘNG,",
+    "headingLineTwo": "VỮNG CHẮC TỪ GỐC.",
+    "paragraphs": [
+      "Tôi là Hoàng Văn Điệu (HOANGDIEUIT) — Kỹ sư Công nghệ Thông tin tốt nghiệp Học viện Công nghệ Bưu chính Viễn thông (PTIT, 2020–2025), chuyên thiết kế kiến trúc backend tích hợp mô hình ngôn ngữ lớn (LLM) và các khung tác nhân thông minh.",
+      "Hiện là Kỹ sư AI tại WeUpBook sau hành trình tại NewWave Solutions JSC và Bamboo Viet Technology JSC — tôi tập trung xây dựng pipeline RAG, điều phối Multi-Agent, tối ưu chi phí/độ trễ inference và đóng gói microservices chịu tải cao với Docker."
+    ],
+    "capabilities": [
+      "FASTAPI & DJANGO",
+      "LLM & RAG",
+      "MULTI-AGENT",
+      "VECTOR & QUEUE",
+      "DOCKER & CLOUD"
+    ]
+  },
+  "projects": {
+    "intro": {
+      "eyebrow": "02 / DỰ ÁN TIÊU BIỂU",
+      "lineOne": "HỆ THỐNG AI & BACKEND",
+      "lineTwo": "VỚI CHIỀU SÂU KỸ THUẬT.",
+      "description": "Mỗi sản phẩm được thiết kế theo kiến trúc mô-đun rõ ràng: điều phối đa tác nhân LangGraph/ADK, truy xuất vector tốc độ cao và backend microservices sẵn sàng mở rộng."
+    },
+    "stage": {
+      "posterTopTag": "HVD / SELECTED WORK",
+      "typeLineOne": "DỰ ÁN",
+      "typeLineTwo": "TIÊU BIỂU",
+      "typeCaption": "SCROLL / KHÁM PHÁ CÁC DỰ ÁN ↓",
+      "fanEyebrow": "PROJECTS / 2022—2026",
+      "fanTitle": "Mỗi hệ thống, một bài toán thực chiến.",
+      "selectedTag": "DỰ ÁN TIÊU BIỂU",
+      "viewProjectLabel": "XEM DỰ ÁN",
+      "fallbackProjectLabel": "GITHUB / HỒ SƠ",
+      "scrollCaption": "SCROLL TO EXPLORE"
+    },
+    "items": [
+      {
+        "id": "agent-marketing",
+        "title": "Agent Marketing",
+        "description": "Nền tảng đa tác nhân điều phối các agent chuyên biệt để tạo copy & hình ảnh, chấm điểm nội dung dựa trên cơ sở tri thức nội bộ và tự động đăng tải đồng thời lên nhiều tài khoản Facebook/Instagram Ads.",
+        "tech": "LangGraph · FastAPI · Next.js · CopilotKit · Milvus · RabbitMQ · Docker",
+        "link": "https://agent-mkt.weupbook.com",
+        "posterKind": "media",
+        "posterCategory": "MULTI-AGENT / ADS",
+        "posterWord": "AM."
+      },
+      {
+        "id": "notebook-service",
+        "title": "Notebook Service",
+        "description": "Trợ lý sách AI cung cấp bản tóm tắt, sinh sơ đồ tư duy phân cấp và chatbot Q&A theo ngữ cảnh sau mua; giảm hơn 90% chi phí API và đưa độ trễ xuống dưới 2 giây nhờ chiến lược cache-first.",
+        "tech": "LangGraph · FastAPI · Qdrant · CopilotKit · Redis · RabbitMQ · PostgreSQL",
+        "link": "https://weupbook.vn/vn/reader/ebook-12-nguyen-tac-nhin-nguoi-doc-vi-nguoi-thau-hieu-bat-ky-ai-de-nam-quyen-kiem-soat-ebk-000067/studio",
+        "posterKind": "news",
+        "posterCategory": "AI STUDIO / EBOOK",
+        "posterWord": "NB."
+      },
+      {
+        "id": "assistant-chatbot",
+        "title": "Assistant Chatbot",
+        "description": "Giao diện Agent-to-User (A2UI) kết hợp LangGraph và CopilotKit trực quan hóa sản phẩm ngay trong khung chat (thẻ tương tác, lưới sản phẩm, giỏ hàng) cùng node lọc ý định bằng LLM.",
+        "tech": "LangGraph · A2UI · AG-UI · FastAPI · Milvus · Redis · PostgreSQL",
+        "link": "https://github.com/CoderFake",
+        "ctaLabel": "XEM GITHUB",
+        "posterKind": "super",
+        "posterCategory": "A2UI / COMMERCE AI",
+        "posterWord": "AC."
+      },
+      {
+        "id": "multi-agent-platform",
+        "title": "Multi Agent Platform",
+        "description": "Hệ thống đa tác nhân phân tán với Root Orchestrator phân rã yêu cầu cho các sub-agent chuyên biệt (Web Search, GitLab, Redmine, HR, Data Analyst) kết hợp RAG qua Milvus trên nền microservices.",
+        "tech": "Google ADK · LangChain · FastAPI · Milvus · RabbitMQ · Redis · MinIO",
+        "link": "https://agentsplatform.cloud/",
+        "posterKind": "partner",
+        "posterCategory": "ORCHESTRATOR / CLOUD",
+        "posterWord": "MP."
+      },
+      {
+        "id": "inhouse-chatbot-mvp",
+        "title": "Inhouse Chatbot (MVP)",
+        "description": "Hệ thống Agentic RAG hỗ trợ tra cứu và hỏi đáp tài liệu doanh nghiệp đa ngôn ngữ có trích dẫn nguồn và phản hồi streaming, kết hợp định tuyến ngữ nghĩa thông minh.",
+        "tech": "Django · FastAPI · Milvus · MinIO · LangChain · Gemini API · Docker",
+        "link": "https://github.com/CoderFake",
+        "ctaLabel": "XEM GITHUB",
+        "posterKind": "match",
+        "posterCategory": "AGENTIC RAG / MVP",
+        "posterWord": "IC."
+      },
+      {
+        "id": "nvidia-rag",
+        "title": "Nvidia RAG",
+        "description": "Hệ thống quản trị tri thức nội bộ toàn công ty tái thiết kế theo chuẩn NVIDIA AI Blueprints (RAG), tối ưu khả năng truy xuất tài liệu liên phòng ban và mở rộng quy mô lớn.",
+        "tech": "FastAPI · Milvus · Ollama · Hugging Face · LangChain · Redis · MinIO",
+        "link": "https://github.com/CoderFake",
+        "ctaLabel": "XEM GITHUB",
+        "posterKind": "farm",
+        "posterCategory": "KNOWLEDGE / RAG",
+        "posterWord": "NR."
+      },
+      {
+        "id": "embed-chatbot",
+        "title": "Embed ChatBot",
+        "description": "Nền tảng microservices cho phép doanh nghiệp nhúng AI chatbot lên website với khả năng tự động thu thập dữ liệu web (Crawl4AI), nạp tài liệu và chấm điểm khách hàng tiềm năng (lead scoring).",
+        "tech": "FastAPI · LangGraph · Crawl4AI · Milvus · RabbitMQ · Redis · Docker",
+        "link": "https://github.com/CoderFake",
+        "ctaLabel": "XEM GITHUB",
+        "posterKind": "store",
+        "posterCategory": "SAAS WIDGET / RAG",
+        "posterWord": "EC."
+      },
+      {
+        "id": "ai-hledu-service",
+        "title": "AI Hledu Service",
+        "description": "Công cụ chấm điểm và đánh giá kỹ năng IELTS Writing & Speaking tự động bằng AI theo tiêu chí chuẩn quốc tế, trả về band điểm ước tính và nhận xét chi tiết tức thì.",
+        "tech": "Google ADK · FastAPI · SupperSpeech · MySQL",
+        "link": "https://hleducation.edu.vn/",
+        "posterKind": "mini",
+        "posterCategory": "EDTECH / SPEECH AI",
+        "posterWord": "HL."
+      },
+      {
+        "id": "mia-home",
+        "title": "Mia Home",
+        "description": "Hệ thống an ninh nhà thông minh ứng dụng Computer Vision (YOLO) phát hiện xâm nhập ban đêm qua luồng video thời gian thực, gửi cảnh báo tức thì và kích hoạt còi/đèn qua Home Assistant.",
+        "tech": "YOLO · FastAPI · Eclipse MQTT · Home Assistant",
+        "link": "https://github.com/CoderFake",
+        "ctaLabel": "XEM GITHUB",
+        "posterKind": "concert",
+        "posterCategory": "VISION / SMART IOT",
+        "posterWord": "MH."
+      },
+      {
+        "id": "career-log",
+        "title": "Career Log",
+        "description": "Ứng dụng web xây dựng hồ sơ ứng viên thông minh tích hợp AI phân tích bố cục & từ khóa CV, đi kèm hệ thống quản trị quy đổi điểm thưởng tự động.",
+        "tech": "Django · FastAPI · Next.js · PostgreSQL · Gemini API · Docker",
+        "link": "https://github.com/CoderFake",
+        "ctaLabel": "XEM GITHUB",
+        "posterKind": "commerce",
+        "posterCategory": "HR TECH / AI CV",
+        "posterWord": "CL."
+      },
+      {
+        "id": "reservation-convert",
+        "title": "Reservation Convert Service",
+        "description": "Dịch vụ chuyển đổi và chuẩn hóa hồ sơ y tế đa nguồn sang lược đồ cơ sở dữ liệu thống nhất, hỗ trợ xử lý hàng loạt hiệu năng cao và giảm thiểu sai sót nhập liệu.",
+        "tech": "Django · Redis · MySQL · Docker",
+        "link": "https://github.com/CoderFake",
+        "ctaLabel": "XEM GITHUB",
+        "posterKind": "partner",
+        "posterCategory": "HEALTHTECH / ETL",
+        "posterWord": "RC."
+      },
+      {
+        "id": "yamaha-car-lighting",
+        "title": "Yamaha Car Lighting System",
+        "description": "Công cụ điều khiển ánh sáng LED bằng Python cho phép tinh chỉnh chính xác thông số hiệu ứng và phát tín hiệu điều khiển phần cứng chuẩn giao thức Python OSC.",
+        "tech": "Python · Flet · OSC Protocol",
+        "link": "https://github.com/CoderFake",
+        "ctaLabel": "XEM GITHUB",
+        "posterKind": "game",
+        "posterCategory": "HARDWARE / LED OSC",
+        "posterWord": "YL."
+      },
+      {
+        "id": "yamaha-led-simulator",
+        "title": "Yamaha Car LED Simulator",
+        "description": "Trình giả lập trực quan nhận tín hiệu OSC thời gian thực, mô phỏng trạng thái cụm đèn LED xe Yamaha và cho phép thiết kế ánh xạ tín hiệu tùy biến.",
+        "tech": "Python · PyQt6 · Real-time Simulation",
+        "link": "https://github.com/CoderFake",
+        "ctaLabel": "XEM GITHUB",
+        "posterKind": "mini",
+        "posterCategory": "SIMULATOR / PYQT6",
+        "posterWord": "YS."
+      }
+    ]
+  },
+  "statement": {
+    "ariaLabel": "Build scalable systems with AI",
+    "eyebrow": "BUILD · SCALABLE · SYSTEMS · WITH · AI",
+    "stepLabel": "SCROLL DRIVES THE STORY / 03",
+    "trackOne": "FASTAPI • LANGGRAPH • RAG • MULTI-AGENT • DOCKER •",
+    "trackTwo": "BACKEND • MICROSERVICES • MILVUS • CLOUD • AI •",
+    "words": {
+      "build": "BUILD",
+      "design": "SCALABLE",
+      "code": "SYSTEMS",
+      "with": "WITH",
+      "ship": "AI"
+    },
+    "bottomLeft": "FROM ARCHITECTURE TO PRODUCTION",
+    "bottomRight": "HOANG VAN DIEU ®"
+  },
+  "experience": {
+    "eyebrow": "03 / KINH NGHIỆM THỰC CHIẾN",
+    "heading": "KIẾN TRÚC HỆ THỐNG & AI TRONG MÔI TRƯỜNG SẢN XUẤT.",
+    "posterTopTag": "HVD / EXPERIENCE",
+    "finale": {
+      "kicker": "03 / HÀNH TRÌNH KỸ THUẬT",
+      "titleLineOne": "BA CHẶNG ĐƯỜNG.",
+      "titleLineTwo": "MỘT TƯ DUY HỆ THỐNG.",
+      "summary": "Từ phần mềm nhúng & thị giác máy tính tại biên, backend doanh nghiệp chuẩn Nhật Bản đến hệ sinh thái Multi-Agent và RAG quy mô lớn."
+    },
+    "items": [
+      {
+        "company": "WeUpBook",
+        "watermark": "WEUPBOOK",
+        "period": "2026 — HIỆN TẠI",
+        "role": "Kỹ sư AI (AI Engineer)",
+        "project": "MULTI-AGENT PLATFORM · NOTEBOOK AI STUDIO · A2UI COMMERCE",
+        "points": [
+          "Thiết kế và phát triển các ứng dụng AI production-ready dựa trên LLM, RAG và kiến trúc đa tác nhân với FastAPI, LangGraph, LangChain và Google ADK.",
+          "Xây dựng hệ thống microservices xử lý tài liệu, tìm kiếm ngữ nghĩa, điều phối agent, streaming API cùng pipeline vector Milvus, Qdrant, Redis, RabbitMQ và MinIO.",
+          "Tối ưu hơn 90% chi phí gọi LLM và đưa độ trễ phản hồi xuống dưới 2 giây thông qua semantic caching, thực thi bất đồng bộ và đóng gói Docker."
+        ],
+        "poster": {
+          "kind": "super",
+          "category": "AGENTIC AI / RAG",
+          "word": "WU.",
+          "title": "WeUpBook"
+        }
+      },
+      {
+        "company": "NewWave Solutions JSC",
+        "watermark": "NEWWAVE",
+        "period": "2024 — 2026",
+        "role": "Backend Developer & Kỹ sư AI",
+        "project": "ENTERPRISE MICROSERVICES (JP MARKET) · NVIDIA RAG · AGENTIC MVP",
+        "points": [
+          "Phát triển và bảo trì hệ thống backend Python (Django, FastAPI), thiết kế RESTful API và kiến trúc microservices cho khách hàng doanh nghiệp thị trường Nhật Bản.",
+          "Tích hợp PostgreSQL, Redis, RabbitMQ, MinIO, Docker; tối ưu hiệu năng truy vấn DB, background workers và dẫn dắt kiến trúc các dự án Agentic RAG nội bộ.",
+          "Tham gia vận hành CI/CD, xử lý sự cố production và trực tiếp mentor thực tập sinh qua code review cùng tiêu chuẩn kiến trúc sạch."
+        ],
+        "poster": {
+          "kind": "partner",
+          "category": "BACKEND / ENTERPRISE AI",
+          "word": "NW.",
+          "title": "NewWave Solutions"
+        }
+      },
+      {
+        "company": "Bamboo Viet Technology JSC",
+        "watermark": "BAMBOO VIET",
+        "period": "2022 — 2023",
+        "role": "Kỹ sư Nhúng & Computer Vision",
+        "project": "INDUSTRIAL IOT · EDGE COMPUTER VISION · SMART HARDWARE",
+        "points": [
+          "Phát triển phần mềm nhúng C/C++ và Python cho thiết bị IoT thông minh, tích hợp cảm biến, vi điều khiển và giao thức MQTT / Serial.",
+          "Xây dựng và tối ưu pipeline thị giác máy tính thời gian thực với OpenCV và mô hình Deep Learning phục vụ nhận diện, theo dõi vật thể công nghiệp.",
+          "Kiểm thử hệ thống phần cứng – phần mềm, tối ưu thuật toán biên và triển khai thực địa đảm bảo độ ổn định dài hạn."
+        ],
+        "poster": {
+          "kind": "match",
+          "category": "EMBEDDED / VISION",
+          "word": "BV.",
+          "title": "Bamboo Viet Tech"
+        }
+      }
+    ]
+  },
+  "toolkit": {
+    "eyebrow": "04 / NĂNG LỰC KỸ THUẬT",
+    "titleLineOne": "TECH",
+    "titleLineTwo": "STACK.",
+    "description": "Bộ công cụ thực chiến kết hợp tư duy kiến trúc backend bền vững, điều phối tác nhân AI hiện đại và hạ tầng triển khai tự động.",
+    "groups": [
+      {
+        "title": "LLM & ĐA TÁC NHÂN",
+        "items": "LangGraph · LangChain · Google ADK · CopilotKit · LlamaIndex · Docling · MinerU · Crawl4AI"
+      },
+      {
+        "title": "NGÔN NGỮ & BACKEND",
+        "items": "Python · C/C++ · JavaScript · FastAPI · Django · Flask · Flet · PyQt6"
+      },
+      {
+        "title": "DỮ LIỆU, VECTOR & QUEUE",
+        "items": "PostgreSQL · MySQL · Milvus · Qdrant · Faiss · Redis · RabbitMQ · Kafka · MinIO · Celery"
+      },
+      {
+        "title": "AI/ML, DEVOPS & CLOUD",
+        "items": "PyTorch · TensorFlow · YOLO · Hugging Face · Docker · AWS · Google Cloud · Grafana · Prometheus"
+      }
+    ]
+  },
+  "proof": {
+    "eyebrow": "05 / MỘT VÀI CON SỐ",
+    "stats": [
+      {
+        "value": 13,
+        "suffix": "+",
+        "label": "Dự án AI & Backend thực tế"
+      },
+      {
+        "value": 7,
+        "suffix": "+",
+        "label": "Nền tảng Multi-Agent & RAG"
+      },
+      {
+        "value": 5,
+        "suffix": "+",
+        "label": "Giải thưởng Hackathon & MVP"
+      },
+      {
+        "value": 4,
+        "suffix": "+",
+        "label": "Năm lập trình & nghiên cứu"
+      }
+    ]
+  },
+  "credentials": {
+    "eyebrow": "06 / HỌC VẤN & GIẢI THƯỞNG",
+    "headingLineOne": "NỀN TẢNG",
+    "headingLineTwo": "ĐƯỢC KIỂM CHỨNG.",
+    "archiveTag": "HỒ SƠ THÀNH TÍCH",
+    "docPrefix": "DOC",
+    "overviewLabel": "05 GIẢI THƯỞNG / MỘT LƯU TRỮ",
+    "education": {
+      "school": "Học viện Công nghệ Bưu chính Viễn thông (PTIT)",
+      "detail": "Kỹ sư Công nghệ Thông tin · 2020–2025 · Chuyên sâu Python, AI & Hệ thống Backend"
+    },
+    "certificates": [
+      {
+        "name": "Giải Nhất — AI-First Hackathon",
+        "issuer": "NewWave Solutions JSC",
+        "date": "2026",
+        "desc": "Quán quân cuộc thi NewWave AI-First Hackathon 2026 với giải pháp kiến trúc sản phẩm lấy AI làm trung tâm có tính ứng dụng thực tiễn cao.",
+        "badge": "FIRST PRIZE · CHAMPION",
+        "serial": "NW-AIFIRST-2026-01",
+        "accent": "#2646c8",
+        "link": "https://hoangdieuit.io.vn",
+        "image": ""
+      },
+      {
+        "name": "Giải Nhất — AI Agentic Hackathon",
+        "issuer": "NewWave Solutions JSC",
+        "date": "2025–2026",
+        "desc": "Quán quân NewWave AI Agentic Hackathon, ghi nhận năng lực thiết kế hệ thống đa tác nhân tự trị và điều phối luồng công việc phức tạp.",
+        "badge": "FIRST PRIZE · AGENTIC AI",
+        "serial": "NW-AGENTIC-2025-01",
+        "accent": "#156964",
+        "link": "https://hoangdieuit.io.vn",
+        "image": ""
+      },
+      {
+        "name": "MVP of the Month",
+        "issuer": "NewWave Solutions JSC",
+        "date": "11 / 2025",
+        "desc": "Danh hiệu Nhân sự Xuất sắc nhất tháng 11/2025 nhờ đóng góp nổi bật trong phát triển sản phẩm AI và đảm bảo tiến độ bàn giao dự án.",
+        "badge": "MOST VALUABLE PLAYER",
+        "serial": "NW-MVP-2025-11",
+        "accent": "#9c335e",
+        "link": "https://hoangdieuit.io.vn",
+        "image": ""
+      },
+      {
+        "name": "Giải Tân binh Xuất sắc (Rookie Award)",
+        "issuer": "NewWave Member of the Year",
+        "date": "2024–2025",
+        "desc": "Giải thưởng Rookie of the Year vinh danh thành viên mới có hiệu suất kỹ thuật vượt trội và tốc độ làm chủ hệ thống nhanh chóng.",
+        "badge": "ROOKIE OF THE YEAR",
+        "serial": "NW-MOTY-2024-RK",
+        "accent": "#b85527",
+        "link": "https://hoangdieuit.io.vn",
+        "image": ""
+      },
+      {
+        "name": "Giải Ba — VNU AI Hackathon",
+        "issuer": "Đại học Quốc gia Hà Nội (VNU)",
+        "date": "2023–2024",
+        "desc": "Đạt Giải Ba tại cuộc thi Trí tuệ Nhân tạo VNU AI Hackathon cấp Đại học Quốc gia Việt Nam.",
+        "badge": "THIRD PRIZE · NATIONAL",
+        "serial": "VNU-AIHACK-2024-03",
+        "accent": "#4c329e",
+        "link": "https://hoangdieuit.io.vn",
+        "image": ""
+      }
+    ]
+  },
+  "services": {
+    "eyebrow": "07 / DỊCH VỤ & HỢP TÁC",
+    "headingFirst": "TỪ KIẾN TRÚC",
+    "headingSecond": "ĐẾN HỆ THỐNG THẬT.",
+    "intro": "Đồng hành xây dựng các sản phẩm AI & Backend sẵn sàng mở rộng: từ thiết kế luồng tác nhân thông minh, API chịu tải cao đến triển khai hạ tầng container.",
+    "items": [
+      {
+        "title": "HỆ THỐNG MULTI-AGENT & RAG",
+        "description": "Thiết kế kiến trúc tác nhân AI tự trị với LangGraph, Google ADK, giao diện tương tác CopilotKit (AG-UI/A2UI) và tìm kiếm ngữ nghĩa chuẩn xác trên Milvus, Qdrant."
+      },
+      {
+        "title": "BACKEND MICROSERVICES PYTHON",
+        "description": "Phát triển RESTful & Streaming API hiệu năng cao bằng FastAPI và Django, tích hợp PostgreSQL, xử lý bất đồng bộ qua Redis, Celery, RabbitMQ và Kafka."
+      },
+      {
+        "title": "TỐI ƯU LLM & VẬN HÀNH CLOUD",
+        "description": "Tối ưu chi phí & độ trễ inference với semantic caching, đóng gói Docker, thiết lập giám sát Grafana/Prometheus và triển khai trên AWS, Google Cloud."
+      }
+    ]
+  },
+  "contact": {
+    "eyebrow": "08 / LIÊN HỆ",
+    "locationLabel": "HÀ NỘI · VIỆT NAM",
+    "headlineAria": "Cùng kiến tạo hệ thống AI thông minh đột phá.",
+    "emailAria": "Gửi email cho Hoàng Văn Điệu",
+    "lines": [
+      { "text": "CÙNG KIẾN TẠO", "mode": "sweep" },
+      { "text": "HỆ THỐNG AI", "mode": "segments" },
+      { "text": "THÔNG MINH", "mode": "slices", "isEmailLink": true },
+      { "text": "ĐỘT PHÁ.", "mode": "resolve", "isEmailLink": true }
+    ],
+    "email": "hoangdieu22022002@gmail.com",
+    "sendHoverLabel": "GỬI EMAIL ↗",
+    "openHoverLabel": "MỞ LIÊN KẾT ↗",
+    "socials": [
+      {
+        "label": "Hồ sơ CV (PDF)",
+        "href": "https://s3.hoangdieuit.io.vn/portfolio-uploads/cv/96b004ead99f.pdf",
+        "icon": "file"
+      },
+      {
+        "label": "GitHub",
+        "href": "https://github.com/CoderFake",
+        "icon": "github"
+      },
+      {
+        "label": "LinkedIn",
+        "href": "https://linkedin.com/in/hoangdieu22022002",
+        "icon": "linkedin"
+      },
+      {
+        "label": "0387 367 162",
+        "href": "tel:+84387367162",
+        "icon": "phone"
+      }
+    ],
+    "footer": {
+      "copyrightName": "HOANG VAN DIEU",
+      "backToTop": "VỀ ĐẦU TRANG ↑",
+      "roleLocation": "AI ENGINEER & BACKEND DEVELOPER · VIETNAM"
+    }
+  }
+}

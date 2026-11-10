@@ -1,0 +1,211 @@
+/* Lenis smooth scroll base */
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-stopped {
+  overflow: clip;
+}
+
+/* Hero title proportion handled per-line in webglAgiTheme.css */
+
+/* Vietnamese diacritic breathing room on tight display headings */
+html[lang="vi"] .intro-copy h2 {
+  font-size: clamp(40px, 6vw, 86px);
+  line-height: 1.14;
+  letter-spacing: -0.055em;
+}
+
+html[lang="vi"] .section-heading h2 {
+  line-height: 1.12;
+  letter-spacing: -0.055em;
+}
+
+html[lang="vi"] .credentials h2 {
+  font-size: clamp(36px, 4.3vw, 66px);
+  line-height: 1.16;
+  letter-spacing: -0.05em;
+}
+
+html[lang="vi"] .project-type-line {
+  line-height: 1.06;
+  letter-spacing: -0.055em;
+}
+
+html[lang="vi"] .contact h2 {
+  font-size: clamp(46px, 6.1vw, 94px);
+  line-height: 1.16;
+  letter-spacing: -0.042em;
+}
+
+html[lang="vi"] .experience-finale h3 {
+  line-height: 1.1;
+  letter-spacing: -0.055em;
+}
+
+/* Museum-grade Certificate / Hackathon Award Plate (when cert.image is empty) */
+.certificate-plate {
+  --cert-accent: #2646c8;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  background:
+    radial-gradient(circle at 86% 18%, color-mix(in srgb, var(--cert-accent) 14%, transparent), transparent 46%),
+    linear-gradient(155deg, #fbfaf6 0%, #f3efe4 100%);
+  color: #1c2024;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+}
+
+.certificate-plate::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.42;
+  background-image:
+    repeating-linear-gradient(0deg, transparent 0 19px, rgba(35, 48, 72, 0.045) 20px),
+    repeating-linear-gradient(90deg, transparent 0 19px, rgba(35, 48, 72, 0.045) 20px);
+}
+
+.certificate-plate-frame {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  border: 1px solid color-mix(in srgb, var(--cert-accent) 34%, #8d938c);
+  box-shadow: inset 0 0 0 3px #faf8f2, inset 0 0 0 4px rgba(28, 32, 36, 0.12);
+  padding: 12px 14px 11px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.certificate-plate-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  border-bottom: 1px solid rgba(28, 32, 36, 0.12);
+  padding-bottom: 6px;
+}
+
+.certificate-plate-badge {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 6.5px;
+  font-weight: 700;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  color: #fff;
+  background: var(--cert-accent);
+  padding: 2.5px 6px;
+  border-radius: 2px;
+}
+
+.certificate-plate-serial {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 6.5px;
+  font-weight: 600;
+  letter-spacing: 0.09em;
+  color: #6b7177;
+}
+
+.certificate-plate-body {
+  margin: auto 0;
+  padding: 4px 0;
+}
+
+.certificate-plate-kicker {
+  margin: 0;
+  font-size: 6.5px;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  color: var(--cert-accent);
+}
+
+.certificate-plate-title {
+  margin: 4px 0 5px;
+  font-size: 13.5px;
+  font-weight: 800;
+  line-height: 1.15;
+  letter-spacing: -0.03em;
+  color: #16191d;
+}
+
+.certificate-plate-recipient {
+  margin: 0 0 5px;
+  font-size: 7px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  color: #676d73;
+}
+
+.certificate-plate-recipient strong {
+  color: #1b1f24;
+  font-weight: 800;
+}
+
+.certificate-plate-desc {
+  margin: 0;
+  font-size: 7.5px;
+  line-height: 1.38;
+  color: #50565c;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.certificate-plate-footer {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  align-items: center;
+  gap: 10px;
+  border-top: 1px solid rgba(28, 32, 36, 0.12);
+  padding-top: 6px;
+}
+
+.certificate-plate-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  min-width: 0;
+}
+
+.certificate-plate-meta--right {
+  text-align: right;
+}
+
+.certificate-plate-meta span {
+  font-size: 5.5px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  color: #7d8389;
+}
+
+.certificate-plate-meta strong {
+  font-size: 7.5px;
+  font-weight: 700;
+  color: #1e2329;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.certificate-plate-seal {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: color-mix(in srgb, var(--cert-accent) 12%, #fff);
+  border: 1px solid color-mix(in srgb, var(--cert-accent) 48%, transparent);
+  color: var(--cert-accent);
+  display: grid;
+  place-items: center;
+  box-shadow: 0 2px 8px color-mix(in srgb, var(--cert-accent) 22%, transparent);
+}

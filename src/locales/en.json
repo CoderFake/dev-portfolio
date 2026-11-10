@@ -1,0 +1,491 @@
+{
+  "theme": {
+    "defaultPreset": "cyber-agi"
+  },
+  "meta": {
+    "lang": "en",
+    "title": "Hoang Van Dieu — AI Engineer & Backend Developer",
+    "description": "Portfolio of Hoang Van Dieu (HOANGDIEUIT) — AI Engineer & Backend Developer specializing in FastAPI, Django, LLMs, RAG, and Multi-Agent architectures.",
+    "brandName": "HOANGDIEU",
+    "brandDot": ".",
+    "shortMark": "HVD®",
+    "logoSrc": "/logo-cf.svg",
+    "avatarSrc": "/images/avatar.jpg",
+    "cvUrl": "https://s3.hoangdieuit.io.vn/portfolio-uploads/cv/96b004ead99f.pdf",
+    "email": "hoangdieu22022002@gmail.com",
+    "phone": "0387 367 162",
+    "location": "Me Tri Thuong, Tu Liem, Ha Noi",
+    "websiteUrl": "https://hoangdieuit.io.vn"
+  },
+  "navbar": {
+    "homeAria": "Hoang Van Dieu home",
+    "languageAria": "Language selector",
+    "toggleMenuAria": "Toggle navigation",
+    "contactCta": "Contact",
+    "contactHref": "mailto:hoangdieu22022002@gmail.com",
+    "links": [
+      { "label": "About", "href": "#about" },
+      { "label": "Work", "href": "#projects" },
+      { "label": "Experience", "href": "#experience" },
+      { "label": "Stack", "href": "#skills" },
+      { "label": "Credentials", "href": "#certificates" },
+      { "label": "Services", "href": "#services" },
+      { "label": "Contact", "href": "#contact" }
+    ]
+  },
+  "hero": {
+    "kicker": "AI ENGINEER · BACKEND, LLMS & AGENTIC SYSTEMS",
+    "titleLineOne": "HOANG VAN",
+    "titleLineTwo": "DIEU",
+    "showPeriod": true,
+    "bio": "At WeUpBook, I architect and ship production-ready AI agents, RAG pipelines, and scalable microservices — bridging clean Python (FastAPI, Django) backend engineering with modern LLM intelligence.",
+    "cvLabel": "DOWNLOAD CV (PDF)",
+    "videoSrc": "/videos/engineer-hero.mp4?v=60fps",
+    "videoAriaLabel": "Hoang Van Dieu engineering AI and backend systems",
+    "scrollTarget": "#projects",
+    "scrollButtonAria": "Scroll to selected work",
+    "indexLeft": "01 — 08",
+    "scrollHint": "SCROLL TO EXPLORE ↓"
+  },
+  "about": {
+    "eyebrow": "01 / ABOUT",
+    "verticalMark": "HVD®",
+    "headingLineOne": "MODULAR BY DESIGN,",
+    "headingLineTwo": "BUILT FOR SCALE.",
+    "paragraphs": [
+      "I'm Hoang Van Dieu (HOANGDIEUIT) — an Information Technology graduate from the Posts and Telecommunications Institute of Technology (PTIT, 2020–2025), specializing in backend system architectures integrated with Large Language Models and agentic frameworks.",
+      "Currently an AI Engineer at WeUpBook following roles at NewWave Solutions JSC and Bamboo Viet Technology JSC — I build multi-agent workflows, high-concurrency RAG retrieval pipelines, and containerized Python microservices engineered for production reliability."
+    ],
+    "capabilities": [
+      "FASTAPI & DJANGO",
+      "LLM & RAG",
+      "MULTI-AGENT",
+      "VECTOR & QUEUE",
+      "DOCKER & CLOUD"
+    ]
+  },
+  "projects": {
+    "intro": {
+      "eyebrow": "02 / 3D ARCHITECTURE & PROJECTS",
+      "lineOne": "AGENTIC & BACKEND",
+      "lineTwo": "ENGINEERING.",
+      "description": "Every platform engineered with modular architectural depth: distributed LangGraph/ADK agent orchestration, low-latency vector retrieval, and resilient microservices."
+    },
+    "stage": {
+      "posterTopTag": "HVD / SELECTED WORK",
+      "typeLineOne": "SELECTED",
+      "typeLineTwo": "WORK",
+      "typeCaption": "SCROLL / EXPLORE THE WORK ↓",
+      "fanEyebrow": "PROJECTS / 2022—2026",
+      "fanTitle": "Every architecture, grounded in real scale.",
+      "selectedTag": "SELECTED WORK",
+      "viewProjectLabel": "VIEW PROJECT",
+      "fallbackProjectLabel": "GITHUB / PROFILE",
+      "scrollCaption": "SCROLL TO EXPLORE"
+    },
+    "items": [
+      {
+        "id": "agent-marketing",
+        "title": "Agent Marketing",
+        "description": "Multi-agent platform orchestrating specialized agents to generate ad copy and visuals, grade content against internal knowledge bases, and automate concurrent multi-account Facebook/Instagram Ads publishing.",
+        "tech": "LangGraph · FastAPI · Next.js · CopilotKit · Milvus · RabbitMQ · Docker",
+        "link": "https://agent-mkt.weupbook.com",
+        "posterKind": "media",
+        "posterCategory": "MULTI-AGENT / ADS",
+        "posterWord": "AM."
+      },
+      {
+        "id": "notebook-service",
+        "title": "Notebook Service",
+        "description": "AI book studio delivering instant summaries, hierarchical mind-map generation, and context-aware Q&A post-purchase — cutting LLM API costs by 90%+ and latency under 2s with cache-first planning.",
+        "tech": "LangGraph · FastAPI · Qdrant · CopilotKit · Redis · RabbitMQ · PostgreSQL",
+        "link": "https://weupbook.vn/vn/reader/ebook-12-nguyen-tac-nhin-nguoi-doc-vi-nguoi-thau-hieu-bat-ky-ai-de-nam-quyen-kiem-soat-ebk-000067/studio",
+        "posterKind": "news",
+        "posterCategory": "AI STUDIO / EBOOK",
+        "posterWord": "NB."
+      },
+      {
+        "id": "assistant-chatbot",
+        "title": "Assistant Chatbot",
+        "description": "Agent-to-User Interface (A2UI) powered by LangGraph and CopilotKit rendering interactive product cards, grids, and carts directly in-chat alongside graph-level LLM intent filtering.",
+        "tech": "LangGraph · A2UI · AG-UI · FastAPI · Milvus · Redis · PostgreSQL",
+        "link": "https://github.com/CoderFake",
+        "ctaLabel": "VIEW GITHUB",
+        "posterKind": "super",
+        "posterCategory": "A2UI / COMMERCE AI",
+        "posterWord": "AC."
+      },
+      {
+        "id": "multi-agent-platform",
+        "title": "Multi Agent Platform",
+        "description": "Distributed multi-agent platform with a Root Orchestrator decomposing tasks across specialized sub-agents (Web Search, GitLab, Redmine, HR, Data Analyst) backed by Milvus RAG microservices.",
+        "tech": "Google ADK · LangChain · FastAPI · Milvus · RabbitMQ · Redis · MinIO",
+        "link": "https://agentsplatform.cloud/",
+        "posterKind": "partner",
+        "posterCategory": "ORCHESTRATOR / CLOUD",
+        "posterWord": "MP."
+      },
+      {
+        "id": "inhouse-chatbot-mvp",
+        "title": "Inhouse Chatbot (MVP)",
+        "description": "Enterprise Agentic RAG platform enabling multilingual document search, semantic routing, citation-grounded answers, and real-time token streaming across heterogeneous file formats.",
+        "tech": "Django · FastAPI · Milvus · MinIO · LangChain · Gemini API · Docker",
+        "link": "https://github.com/CoderFake",
+        "ctaLabel": "VIEW GITHUB",
+        "posterKind": "match",
+        "posterCategory": "AGENTIC RAG / MVP",
+        "posterWord": "IC."
+      },
+      {
+        "id": "nvidia-rag",
+        "title": "Nvidia RAG",
+        "description": "Company-wide internal knowledge base redesigned around NVIDIA AI Blueprints (RAG) to unify cross-department document retrieval and scalable semantic search.",
+        "tech": "FastAPI · Milvus · Ollama · Hugging Face · LangChain · Redis · MinIO",
+        "link": "https://github.com/CoderFake",
+        "ctaLabel": "VIEW GITHUB",
+        "posterKind": "farm",
+        "posterCategory": "KNOWLEDGE / RAG",
+        "posterWord": "NR."
+      },
+      {
+        "id": "embed-chatbot",
+        "title": "Embed ChatBot",
+        "description": "Microservices SaaS platform allowing websites to embed custom RAG chatbots with automated web crawling (Crawl4AI), document ingestion, and AI-driven lead qualification.",
+        "tech": "FastAPI · LangGraph · Crawl4AI · Milvus · RabbitMQ · Redis · Docker",
+        "link": "https://github.com/CoderFake",
+        "ctaLabel": "VIEW GITHUB",
+        "posterKind": "store",
+        "posterCategory": "SAAS WIDGET / RAG",
+        "posterWord": "EC."
+      },
+      {
+        "id": "ai-hledu-service",
+        "title": "AI Hledu Service",
+        "description": "AI-powered IELTS Writing and Speaking assessment platform evaluating learners against official band criteria with instant score estimation and grammar/coherence feedback.",
+        "tech": "Google ADK · FastAPI · SupperSpeech · MySQL",
+        "link": "https://hleducation.edu.vn/",
+        "posterKind": "mini",
+        "posterCategory": "EDTECH / SPEECH AI",
+        "posterWord": "HL."
+      },
+      {
+        "id": "mia-home",
+        "title": "Mia Home",
+        "description": "Smart home AI security pipeline utilizing YOLO real-time nighttime video analysis to detect intrusions, dispatch instant alerts, and trigger Home Assistant MQTT automations.",
+        "tech": "YOLO · FastAPI · Eclipse MQTT · Home Assistant",
+        "link": "https://github.com/CoderFake",
+        "ctaLabel": "VIEW GITHUB",
+        "posterKind": "concert",
+        "posterCategory": "VISION / SMART IOT",
+        "posterWord": "MH."
+      },
+      {
+        "id": "career-log",
+        "title": "Career Log",
+        "description": "AI-assisted candidate profile & CV platform offering automated layout and keyword optimization alongside an administrative reward redemption workflow.",
+        "tech": "Django · FastAPI · Next.js · PostgreSQL · Gemini API · Docker",
+        "link": "https://github.com/CoderFake",
+        "ctaLabel": "VIEW GITHUB",
+        "posterKind": "commerce",
+        "posterCategory": "HR TECH / AI CV",
+        "posterWord": "CL."
+      },
+      {
+        "id": "reservation-convert",
+        "title": "Reservation Convert Service",
+        "description": "Healthcare data standardization service ingesting fragmented medical records from multiple formats into a unified relational schema with batch processing.",
+        "tech": "Django · Redis · MySQL · Docker",
+        "link": "https://github.com/CoderFake",
+        "ctaLabel": "VIEW GITHUB",
+        "posterKind": "partner",
+        "posterCategory": "HEALTHTECH / ETL",
+        "posterWord": "RC."
+      },
+      {
+        "id": "yamaha-car-lighting",
+        "title": "Yamaha Car Lighting System",
+        "description": "Python-based automotive LED control tool engineered for precision lighting parameter tuning and hardware control signal generation over Python OSC.",
+        "tech": "Python · Flet · OSC Protocol",
+        "link": "https://github.com/CoderFake",
+        "ctaLabel": "VIEW GITHUB",
+        "posterKind": "game",
+        "posterCategory": "HARDWARE / LED OSC",
+        "posterWord": "YL."
+      },
+      {
+        "id": "yamaha-led-simulator",
+        "title": "Yamaha Car LED Simulator",
+        "description": "Real-time desktop simulator receiving live OSC streams to preview automotive LED states and author custom hardware signal mappings.",
+        "tech": "Python · PyQt6 · Real-time Simulation",
+        "link": "https://github.com/CoderFake",
+        "ctaLabel": "VIEW GITHUB",
+        "posterKind": "mini",
+        "posterCategory": "SIMULATOR / PYQT6",
+        "posterWord": "YS."
+      }
+    ]
+  },
+  "statement": {
+    "ariaLabel": "Build scalable systems with AI",
+    "eyebrow": "BUILD · SCALABLE · SYSTEMS · WITH · AI",
+    "stepLabel": "SCROLL DRIVES THE STORY / 03",
+    "trackOne": "FASTAPI • LANGGRAPH • RAG • MULTI-AGENT • DOCKER •",
+    "trackTwo": "BACKEND • MICROSERVICES • MILVUS • CLOUD • AI •",
+    "words": {
+      "build": "BUILD",
+      "design": "SCALABLE",
+      "code": "SYSTEMS",
+      "with": "WITH",
+      "ship": "AI"
+    },
+    "bottomLeft": "FROM ARCHITECTURE TO PRODUCTION",
+    "bottomRight": "HOANG VAN DIEU ®"
+  },
+  "experience": {
+    "eyebrow": "03 / HANDS-ON EXPERIENCE",
+    "heading": "PRODUCTION BACKEND & AGENTIC AI ENGINEERING.",
+    "posterTopTag": "HVD / EXPERIENCE",
+    "finale": {
+      "kicker": "03 / EXPERIENCE ARCHIVE",
+      "titleLineOne": "THREE CHAPTERS.",
+      "titleLineTwo": "ONE SYSTEMS CRAFT.",
+      "summary": "From edge computer vision and Japanese enterprise backends to production-scale Multi-Agent and RAG platforms — grounded in real engineering."
+    },
+    "items": [
+      {
+        "company": "WeUpBook",
+        "watermark": "WEUPBOOK",
+        "period": "2026 — PRESENT",
+        "role": "AI Engineer",
+        "project": "MULTI-AGENT PLATFORM · NOTEBOOK AI STUDIO · A2UI COMMERCE",
+        "points": [
+          "Design and ship production-ready AI applications powered by LLMs, RAG, and multi-agent architectures using FastAPI, LangGraph, LangChain, and Google ADK.",
+          "Engineer scalable backend microservices and vector retrieval pipelines with Milvus, Qdrant, Redis, RabbitMQ, and MinIO for high-concurrency workloads.",
+          "Cut inference costs by 90%+ and keep latency under 2s via semantic caching, async task execution, and containerized Docker deployments."
+        ],
+        "poster": {
+          "kind": "super",
+          "category": "AGENTIC AI / RAG",
+          "word": "WU.",
+          "title": "WeUpBook"
+        }
+      },
+      {
+        "company": "NewWave Solutions JSC",
+        "watermark": "NEWWAVE",
+        "period": "2024 — 2026",
+        "role": "Backend Developer & AI Engineer",
+        "project": "ENTERPRISE MICROSERVICES (JP MARKET) · NVIDIA RAG · AGENTIC MVP",
+        "points": [
+          "Developed and maintained Python (Django, FastAPI) backend services and RESTful APIs for enterprise systems serving the Japanese market.",
+          "Architected microservice pipelines integrating PostgreSQL, Redis, RabbitMQ, MinIO, and Docker while leading internal NVIDIA Blueprint & Agentic RAG initiatives.",
+          "Tuned database throughput, maintained CI/CD & Docker infrastructure, and mentored interns through code reviews and clean architecture practices."
+        ],
+        "poster": {
+          "kind": "partner",
+          "category": "BACKEND / ENTERPRISE AI",
+          "word": "NW.",
+          "title": "NewWave Solutions"
+        }
+      },
+      {
+        "company": "Bamboo Viet Technology JSC",
+        "watermark": "BAMBOO VIET",
+        "period": "2022 — 2023",
+        "role": "Embedded & Computer Vision Engineer",
+        "project": "INDUSTRIAL IOT · EDGE COMPUTER VISION · SMART HARDWARE",
+        "points": [
+          "Developed embedded C/C++ and Python software for smart IoT hardware, integrating sensors, microcontrollers, and MQTT / serial protocols.",
+          "Built and optimized real-time OpenCV and Deep Learning vision pipelines for object detection, tracking, and industrial automation.",
+          "Executed hardware-software integration testing, edge inference optimization, and field deployments in production environments."
+        ],
+        "poster": {
+          "kind": "match",
+          "category": "EMBEDDED / VISION",
+          "word": "BV.",
+          "title": "Bamboo Viet Tech"
+        }
+      }
+    ]
+  },
+  "toolkit": {
+    "eyebrow": "04 / CAPABILITIES",
+    "titleLineOne": "TECH",
+    "titleLineTwo": "STACK.",
+    "description": "A battle-tested blend of modular Python backend engineering, multi-agent LLM orchestration, and cloud-ready infrastructure.",
+    "groups": [
+      {
+        "title": "LLM & AGENTIC AI",
+        "items": "LangGraph · LangChain · Google ADK · CopilotKit · LlamaIndex · Docling · MinerU · Crawl4AI"
+      },
+      {
+        "title": "BACKEND & LANGUAGES",
+        "items": "Python · C/C++ · JavaScript · FastAPI · Django · Flask · Flet · PyQt6"
+      },
+      {
+        "title": "DATA, VECTOR & QUEUE",
+        "items": "PostgreSQL · MySQL · Milvus · Qdrant · Faiss · Redis · RabbitMQ · Kafka · MinIO · Celery"
+      },
+      {
+        "title": "AI/ML, DEVOPS & CLOUD",
+        "items": "PyTorch · TensorFlow · YOLO · Hugging Face · Docker · AWS · Google Cloud · Grafana · Prometheus"
+      }
+    ]
+  },
+  "proof": {
+    "eyebrow": "05 / A FEW NUMBERS",
+    "stats": [
+      {
+        "value": 13,
+        "suffix": "+",
+        "label": "AI & Backend Projects Built"
+      },
+      {
+        "value": 7,
+        "suffix": "+",
+        "label": "Multi-Agent & RAG Platforms"
+      },
+      {
+        "value": 5,
+        "suffix": "+",
+        "label": "Hackathon & MVP Awards"
+      },
+      {
+        "value": 4,
+        "suffix": "+",
+        "label": "Years Coding & AI R&D"
+      }
+    ]
+  },
+  "credentials": {
+    "eyebrow": "06 / EDUCATION & AWARDS",
+    "headingLineOne": "BUILT ON",
+    "headingLineTwo": "PROVEN FOUNDATIONS.",
+    "archiveTag": "ARCHIVE RECORD",
+    "docPrefix": "DOC",
+    "overviewLabel": "05 HONORS / ONE ARCHIVE",
+    "education": {
+      "school": "Posts and Telecommunications Institute of Technology (PTIT)",
+      "detail": "B.Eng. in Information Technology · 2020–2025 · Python, AI & Backend Systems"
+    },
+    "certificates": [
+      {
+        "name": "First Prize — AI-First Hackathon",
+        "issuer": "NewWave Solutions JSC",
+        "date": "2026",
+        "desc": "Champion of the NewWave AI-First Hackathon (2026), recognized for product-ready AI-first system architecture and execution.",
+        "badge": "FIRST PRIZE · CHAMPION",
+        "serial": "NW-AIFIRST-2026-01",
+        "accent": "#2646c8",
+        "link": "https://hoangdieuit.io.vn",
+        "image": ""
+      },
+      {
+        "name": "First Prize — AI Agentic Hackathon",
+        "issuer": "NewWave Solutions JSC",
+        "date": "2025–2026",
+        "desc": "Winner of the NewWave AI Agentic Hackathon (2025–2026) for autonomous multi-agent workflow orchestration.",
+        "badge": "FIRST PRIZE · AGENTIC AI",
+        "serial": "NW-AGENTIC-2025-01",
+        "accent": "#156964",
+        "link": "https://hoangdieuit.io.vn",
+        "image": ""
+      },
+      {
+        "name": "MVP of the Month",
+        "issuer": "NewWave Solutions JSC",
+        "date": "Nov 2025",
+        "desc": "Awarded Most Valuable Player (November 2025) for outstanding engineering ownership and AI product delivery.",
+        "badge": "MOST VALUABLE PLAYER",
+        "serial": "NW-MVP-2025-11",
+        "accent": "#9c335e",
+        "link": "https://hoangdieuit.io.vn",
+        "image": ""
+      },
+      {
+        "name": "Rookie of the Year Award",
+        "issuer": "NewWave Member of the Year",
+        "date": "2024–2025",
+        "desc": "Honored with the Rookie Award at NewWave Member of the Year (2024–2025) for exceptional technical impact.",
+        "badge": "ROOKIE OF THE YEAR",
+        "serial": "NW-MOTY-2024-RK",
+        "accent": "#b85527",
+        "link": "https://hoangdieuit.io.vn",
+        "image": ""
+      },
+      {
+        "name": "Third Prize — VNU AI Hackathon",
+        "issuer": "Vietnam National University (VNU)",
+        "date": "2023–2024",
+        "desc": "Won Third Prize at the Vietnam National University (VNU) AI Hackathon (2023–2024).",
+        "badge": "THIRD PRIZE · NATIONAL",
+        "serial": "VNU-AIHACK-2024-03",
+        "accent": "#4c329e",
+        "link": "https://hoangdieuit.io.vn",
+        "image": ""
+      }
+    ]
+  },
+  "services": {
+    "eyebrow": "07 / SERVICES & COLLABORATION",
+    "headingFirst": "FROM ARCHITECTURE",
+    "headingSecond": "TO PRODUCTION.",
+    "intro": "End-to-end engineering across autonomous AI agents, RAG knowledge platforms, high-throughput Python microservices, and Dockerized cloud delivery.",
+    "items": [
+      {
+        "title": "MULTI-AGENT & RAG SYSTEMS",
+        "description": "Production agentic workflows built with LangGraph, Google ADK, interactive CopilotKit (AG-UI/A2UI) interfaces, and low-latency Milvus/Qdrant vector retrieval."
+      },
+      {
+        "title": "SCALABLE PYTHON BACKENDS",
+        "description": "Clean, high-concurrency RESTful & streaming APIs engineered with FastAPI, Django, PostgreSQL, Redis, Celery, RabbitMQ, and Kafka."
+      },
+      {
+        "title": "LLM OPTIMIZATION & CLOUD OPS",
+        "description": "Up to 90% inference cost reduction via semantic caching, Docker containerization, Prometheus/Grafana observability, and AWS/GCP deployment."
+      }
+    ]
+  },
+  "contact": {
+    "eyebrow": "08 / GET IN TOUCH",
+    "locationLabel": "HANOI · VIETNAM",
+    "headlineAria": "Let’s build intelligent systems together.",
+    "emailAria": "Email Hoang Van Dieu",
+    "lines": [
+      { "text": "LET’S BUILD", "mode": "sweep" },
+      { "text": "INTELLIGENT", "mode": "segments" },
+      { "text": "SYSTEMS", "mode": "slices", "isEmailLink": true },
+      { "text": "TOGETHER.", "mode": "resolve", "isEmailLink": true }
+    ],
+    "email": "hoangdieu22022002@gmail.com",
+    "sendHoverLabel": "SEND ↗",
+    "openHoverLabel": "OPEN ↗",
+    "socials": [
+      {
+        "label": "Resume (PDF)",
+        "href": "https://s3.hoangdieuit.io.vn/portfolio-uploads/cv/96b004ead99f.pdf",
+        "icon": "file"
+      },
+      {
+        "label": "GitHub",
+        "href": "https://github.com/CoderFake",
+        "icon": "github"
+      },
+      {
+        "label": "LinkedIn",
+        "href": "https://linkedin.com/in/hoangdieu22022002",
+        "icon": "linkedin"
+      },
+      {
+        "label": "0387 367 162",
+        "href": "tel:+84387367162",
+        "icon": "phone"
+      }
+    ],
+    "footer": {
+      "copyrightName": "HOANG VAN DIEU",
+      "backToTop": "BACK TO TOP ↑",
+      "roleLocation": "AI ENGINEER & BACKEND DEVELOPER · VIETNAM"
+    }
+  }
+}

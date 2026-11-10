@@ -1,0 +1,1111 @@
+/* ==========================================================================
+   Rust + WebAssembly 3D Star Network Layout & Standout Theme System
+   - Top Hero (#top): Clean Studio 3D Engineer Video + Pro Architectural Name
+   - Lower Sections: Rust/Wasm 3D Star Constellation Network (portfolio_ver2)
+   ========================================================================== */
+
+:root {
+  --paper: #060812;
+  --paper-elevated: #090d1c;
+  --paper-muted: #070a16;
+  --ink: #f3f6ff;
+  --muted: #a3b1d2;
+  --line: rgba(255, 255, 255, 0.14);
+  --blue: #00d2ff;
+  --accent-primary: #00f0ff;
+  --accent-secondary: #8b5cf6;
+  --accent-tertiary: #f43f5e;
+  --accent-solid: #4f46e5;
+  --accent-glow: rgba(0, 240, 255, 0.35);
+  --dark-void: #05060b;
+  --dark-surface: #090d1e;
+  --dark-elevated: #101735;
+  --dark-ink: #f4f7ff;
+  --dark-muted: #94a3c8;
+  --dark-line: rgba(0, 240, 255, 0.18);
+}
+
+html,
+body {
+  background-color: #05060b !important;
+  color: #f3f6ff !important;
+}
+
+.portfolio {
+  position: relative;
+  z-index: 1;
+  background: transparent !important;
+}
+
+/* Strip `filter` from will-change to eliminate 150+ offscreen GPU FBO allocations */
+.split-piece,
+.stack-card,
+.project-type-line,
+.project-name-field > span,
+.kinetic-word,
+.experience-title-char,
+.experience-company-char,
+.service-heading-char,
+.service-lane-word,
+.service-description-word,
+.contact-glyph {
+  will-change: transform, opacity !important;
+}
+
+/* ==========================================================================
+   Rust + WebAssembly 3D Star Network Backdrop (Zero-Blur GPU Composited)
+   ========================================================================== */
+.star-network-layout-backdrop {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(
+      circle at 12% 22%,
+      color-mix(in srgb, var(--accent-secondary) 14%, transparent) 0%,
+      transparent 48%
+    ),
+    radial-gradient(
+      circle at 88% 78%,
+      color-mix(in srgb, var(--accent-primary) 12%, transparent) 0%,
+      transparent 48%
+    ),
+    #05060b;
+  overflow: hidden;
+  transition: opacity 0.35s ease;
+  will-change: opacity;
+}
+
+.star-network-canvas {
+  position: absolute;
+  inset: 0;
+  width: 100% !important;
+  height: 100% !important;
+  display: block;
+}
+
+/* Navbar Brand & Theme Switcher */
+.site-nav[data-nav-theme="light"] {
+  color: #141824 !important;
+}
+
+.site-nav[data-nav-theme="light"] .site-nav-links a {
+  color: #1c2230 !important;
+}
+
+.site-brand-dot {
+  color: var(--accent-solid);
+}
+
+.site-nav[data-nav-theme="dark"] .site-brand-dot {
+  color: var(--accent-primary);
+}
+
+.site-lang-active {
+  background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
+  color: #04060e !important;
+}
+
+.site-cta-pill {
+  background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
+  color: #04060e !important;
+}
+
+.site-cta-pill:hover {
+  transform: translateY(-1px);
+  filter: brightness(1.08);
+}
+
+/* ==========================================================================
+   Top Hero (#top) — Three.js 3D AGI Core + Studio Engineer Video Stage
+   (GPU-safe: zero CSS mask-image, zero mix-blend-mode, zero text-clip bugs)
+   ========================================================================== */
+.hero.hero--webgl {
+  position: relative;
+  z-index: 2;
+  background-color: #050814 !important;
+  background-image: none !important;
+  color: var(--dark-ink) !important;
+  cursor: pointer;
+}
+
+.hero.hero--webgl .hero-grid {
+  z-index: 2;
+  opacity: 0.22 !important;
+  background-image:
+    linear-gradient(90deg, transparent calc(25% - 1px), var(--dark-line) 25%, transparent calc(25% + 1px)),
+    linear-gradient(0deg, transparent calc(50% - 1px), var(--dark-line) 50%, transparent calc(50% + 1px)) !important;
+}
+
+.hero.hero--webgl .hero-visual {
+  z-index: 1 !important;
+  opacity: 1 !important;
+  inset: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.hero-video-frame--studio {
+  z-index: 1 !important;
+  opacity: 1 !important;
+  inset: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  box-shadow: none !important;
+  filter: none !important;
+}
+
+.hero-video-frame--studio .hero-video {
+  opacity: 1 !important;
+  filter: none !important;
+}
+
+.hero-studio-scrim {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  pointer-events: none;
+  background: linear-gradient(
+    90deg,
+    rgba(4, 7, 18, 0.72) 0%,
+    rgba(5, 9, 22, 0.56) 28%,
+    rgba(6, 11, 26, 0.24) 48%,
+    rgba(6, 11, 26, 0.04) 66%,
+    rgba(4, 7, 18, 0.18) 100%
+  );
+}
+
+.agi-neural-core-canvas {
+  position: absolute;
+  inset: 0;
+  width: 100% !important;
+  height: 100% !important;
+  z-index: 3;
+  display: block;
+  pointer-events: auto;
+}
+
+.hero.hero--webgl .hero-content {
+  z-index: 5;
+  pointer-events: none;
+  margin: 0 !important;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.hero-left-stage {
+  width: 100%;
+  max-width: min(33vw, 470px);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .hero.hero--webgl [data-vortex-char],
+  .hero.hero--webgl [data-hero-intro-fade] {
+    opacity: 0;
+  }
+}
+
+.hero.hero--webgl .hero-content a,
+.hero.hero--webgl .hero-content button {
+  pointer-events: auto;
+}
+
+.hero.hero--webgl .hero-kicker {
+  color: var(--accent-primary) !important;
+  background: rgba(5, 9, 22, 0.78);
+  border: 1px solid var(--dark-line);
+  padding: 6px 13px;
+  border-radius: 999px;
+  width: fit-content;
+  margin: 0 0 18px 0 !important;
+  will-change: transform, opacity;
+}
+
+.hero.hero--webgl .status-dot {
+  background: var(--accent-primary) !important;
+  box-shadow: 0 0 10px var(--accent-primary), 0 0 0 4px var(--accent-glow) !important;
+}
+
+.hero.hero--webgl .hero-title {
+  position: relative;
+  perspective: 1100px;
+  font-family: "Space Grotesk", "Inter", "Be Vietnam Pro", sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 0.05em;
+  line-height: 0.9 !important;
+  letter-spacing: -0.04em !important;
+  color: #f8faff !important;
+  text-shadow: 0 12px 34px rgba(2, 5, 16, 0.88) !important;
+}
+
+.hero-speed-lines {
+  position: absolute;
+  inset: 0 -8% 0 -18%;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.hero-speed-streak {
+  position: absolute;
+  left: 0;
+  height: 2px;
+  border-radius: 999px;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    var(--accent-secondary) 28%,
+    var(--accent-primary) 78%,
+    #ffffff 100%
+  );
+  box-shadow: 0 0 14px var(--accent-primary);
+  opacity: 0;
+  will-change: transform, opacity;
+}
+
+.hero-speed-streak--1 {
+  top: 22%;
+  width: 88%;
+}
+
+.hero-speed-streak--2 {
+  top: 54%;
+  width: 100%;
+  height: 3px;
+}
+
+.hero-speed-streak--3 {
+  top: 82%;
+  width: 76%;
+}
+
+.hero-vortex-char {
+  display: inline-block;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  will-change: transform, opacity;
+}
+
+.hero-vortex-space {
+  display: inline-block;
+  width: 0.26em;
+}
+
+.hero.hero--webgl .hero-title-line--one {
+  font-size: clamp(38px, 4.5vw, 72px);
+  font-weight: 700;
+  letter-spacing: -0.036em;
+  white-space: nowrap;
+  color: #eef4ff !important;
+}
+
+.hero.hero--webgl .hero-title-line--two {
+  font-size: clamp(54px, 6.4vw, 102px);
+  font-weight: 700;
+  letter-spacing: -0.046em;
+  padding-left: 1.8vw;
+  display: inline-flex;
+  align-items: baseline;
+  white-space: nowrap;
+  color: #ffffff !important;
+}
+
+.hero.hero--webgl .hero-title-main {
+  color: #ffffff !important;
+  display: inline-flex;
+}
+
+.hero.hero--webgl .hero-title .period {
+  color: var(--accent-primary) !important;
+  text-shadow: 0 0 24px var(--accent-glow);
+  margin-left: 0.015em;
+}
+
+.hero.hero--webgl .hero-bottom {
+  margin: 26px 0 0 0 !important;
+  width: 100%;
+  max-width: min(31vw, 430px);
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 18px;
+  will-change: transform, opacity;
+}
+
+.hero.hero--webgl .hero-bio-card {
+  flex: 1;
+  min-width: 0;
+}
+
+.hero.hero--webgl .hero-bottom p {
+  width: 100% !important;
+  max-width: 380px !important;
+  font-size: clamp(13.5px, 1.05vw, 16px) !important;
+  line-height: 1.62 !important;
+  color: #e4ecff !important;
+  text-shadow: 0 2px 16px rgba(3, 6, 18, 0.95) !important;
+}
+
+.hero.hero--webgl .cv-link {
+  color: var(--accent-primary) !important;
+  border-color: color-mix(in srgb, var(--accent-primary) 62%, transparent) !important;
+}
+
+.hero.hero--webgl .cv-link:hover {
+  color: #ffffff !important;
+  border-color: #ffffff !important;
+}
+
+.hero.hero--webgl .round-link {
+  color: var(--accent-primary) !important;
+  border-color: color-mix(in srgb, var(--accent-primary) 55%, transparent) !important;
+  background: rgba(5, 10, 25, 0.82);
+}
+
+.hero.hero--webgl .round-link:hover {
+  background: var(--accent-primary) !important;
+  color: #04060e !important;
+}
+
+.hero.hero--webgl .hero-index,
+.hero.hero--webgl .hero-index span:nth-child(2) {
+  color: var(--dark-muted) !important;
+  z-index: 5;
+}
+
+/* ==========================================================================
+   Lower Sections ("Session dưới") Over the Rust/Wasm 3D Star Network
+   ========================================================================== */
+
+/* 01 / About (.intro) & Projects Intro (.work.section-pad) */
+.intro,
+.work.section-pad {
+  background: rgba(5, 7, 16, 0.44) !important;
+  color: #f4f7ff !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.intro .eyebrow,
+.work-intro .eyebrow {
+  color: var(--accent-primary) !important;
+}
+
+.vertical-mark {
+  color: #c4b5fd !important;
+}
+
+.intro-copy h2,
+.intro-copy h2 .intro-heading-line:first-child,
+.work-intro-line,
+.work-intro .work-intro-line--first .split-piece {
+  color: #f5f8ff !important;
+}
+
+.intro-copy h2 .intro-heading-line:nth-child(2),
+.work-intro-line--second,
+.work-intro .work-intro-line--second .split-piece,
+.section-heading h2 span,
+.toolkit-title h2 span,
+.credentials h2 span {
+  color: var(--accent-primary) !important;
+}
+
+.intro-word-scrub .scroll-word,
+.intro-detail p,
+.intro-detail p:nth-child(2) .scroll-word,
+.section-heading > p {
+  color: #c4d0ec !important;
+}
+
+.capability-line {
+  color: #94a3c8 !important;
+}
+
+.capability-line:before {
+  background: rgba(255, 255, 255, 0.16) !important;
+}
+
+/* 02 / Projects 3D Stack Stage */
+.work .project-stage {
+  background: radial-gradient(
+    circle at 50% 42%,
+    rgba(16, 26, 58, 0.46) 0%,
+    rgba(5, 7, 15, 0.54) 100%
+  ) !important;
+}
+
+.project-stage:before {
+  display: none !important;
+}
+
+.project-stage .project-type-line--second {
+  color: var(--accent-primary) !important;
+}
+
+.project-stage .stack-card-heading > span {
+  color: var(--accent-primary) !important;
+}
+
+.project-stage .stack-card-bottom > a {
+  border-color: color-mix(in srgb, var(--accent-primary) 65%, rgba(255, 255, 255, 0.4)) !important;
+  background: rgba(6, 12, 28, 0.78);
+}
+
+.project-stage .stack-card-bottom > a:hover {
+  background: var(--accent-primary) !important;
+  color: #04060e !important;
+  border-color: var(--accent-primary) !important;
+}
+
+/* Cyber-AI Project & Experience Poster Cards (Neural / RAG / Multi-Agent Visuals) */
+.project-poster {
+  background:
+    radial-gradient(circle at 80% 18%, color-mix(in srgb, var(--poster-accent) 26%, transparent), transparent 55%),
+    linear-gradient(155deg, var(--poster-bg) 0%, #050916 100%) !important;
+  color: var(--poster-fg) !important;
+  border: 1px solid color-mix(in srgb, var(--poster-accent) 48%, rgba(255, 255, 255, 0.14)) !important;
+  box-shadow:
+    0 24px 60px rgba(2, 5, 16, 0.85),
+    inset 0 0 28px color-mix(in srgb, var(--poster-accent) 14%, transparent) !important;
+}
+
+.project-poster--media {
+  --poster-bg: #161036 !important;
+  --poster-fg: #f4f7ff !important;
+  --poster-accent: #00f0ff !important;
+}
+
+.project-poster--news {
+  --poster-bg: #0c1a38 !important;
+  --poster-fg: #f4f7ff !important;
+  --poster-accent: #38bdf8 !important;
+}
+
+.project-poster--super {
+  --poster-bg: #12153a !important;
+  --poster-fg: #f4f7ff !important;
+  --poster-accent: #a855f7 !important;
+}
+
+.project-poster--partner {
+  --poster-bg: #08222b !important;
+  --poster-fg: #ecfeff !important;
+  --poster-accent: #2dd4bf !important;
+}
+
+.project-poster--match {
+  --poster-bg: #0b1c36 !important;
+  --poster-fg: #f0fdfa !important;
+  --poster-accent: #34d399 !important;
+}
+
+.project-poster--farm {
+  --poster-bg: #0f241d !important;
+  --poster-fg: #f0fdf4 !important;
+  --poster-accent: #4ade80 !important;
+}
+
+.project-poster--store {
+  --poster-bg: #0e1b3d !important;
+  --poster-fg: #eff6ff !important;
+  --poster-accent: #60a5fa !important;
+}
+
+.project-poster--mini {
+  --poster-bg: #092132 !important;
+  --poster-fg: #f0f9ff !important;
+  --poster-accent: #22d3ee !important;
+}
+
+.project-poster--concert {
+  --poster-bg: #261029 !important;
+  --poster-fg: #fff1f2 !important;
+  --poster-accent: #fb7185 !important;
+}
+
+.project-poster--commerce {
+  --poster-bg: #1e1538 !important;
+  --poster-fg: #f5f3ff !important;
+  --poster-accent: #c084fc !important;
+}
+
+.project-poster--game {
+  --poster-bg: #151936 !important;
+  --poster-fg: #eef2ff !important;
+  --poster-accent: #818cf8 !important;
+}
+
+.poster-ai-grid {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(0deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+  background-size: 22px 22px;
+  opacity: 0.65;
+  pointer-events: none;
+}
+
+.poster-art-core--ai {
+  width: 86% !important;
+  height: 86% !important;
+}
+
+.poster-ai-svg {
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  filter: drop-shadow(0 8px 22px rgba(2, 6, 20, 0.72));
+}
+
+.poster-custom-image {
+  width: 100%;
+  height: 100%;
+  max-height: 170px;
+  object-fit: contain;
+  border-radius: 12px;
+  filter: drop-shadow(0 8px 22px rgba(2, 6, 20, 0.72));
+}
+
+.project-poster .poster-bottom strong {
+  color: #ffffff !important;
+  text-shadow: 0 0 24px color-mix(in srgb, var(--poster-accent) 45%, transparent);
+}
+
+.project-poster .poster-category {
+  color: var(--poster-accent) !important;
+  border-bottom-color: color-mix(in srgb, var(--poster-accent) 45%, transparent) !important;
+}
+
+/* 03 / Kinetic Statement Stage ("BUILD · SCALABLE · SYSTEMS · WITH · AI") */
+.statement {
+  background: radial-gradient(
+    circle at 50% 50%,
+    color-mix(in srgb, var(--accent-secondary) 14%, transparent) 0%,
+    rgba(5, 7, 15, 0.44) 100%
+  ) !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.statement .eyebrow {
+  color: var(--accent-primary) !important;
+}
+
+.kinetic-word--design {
+  color: var(--accent-primary) !important;
+  font-size: clamp(92px, 14.2vw, 225px) !important;
+}
+
+.kinetic-word--code {
+  font-size: clamp(96px, 15.2vw, 240px) !important;
+}
+
+.kinetic-word--with {
+  color: #dbeafe !important;
+  font-size: clamp(110px, 17vw, 270px) !important;
+}
+
+.kinetic-word--ai {
+  color: #ffffff !important;
+  font-size: clamp(150px, 22vw, 350px) !important;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.kinetic-word--ai .kinetic-char {
+  color: #ffffff !important;
+  text-shadow:
+    0 0 22px #ffffff,
+    0 0 48px var(--accent-primary),
+    0 0 95px var(--accent-primary),
+    0 0 150px var(--accent-secondary) !important;
+}
+
+/* Radiant Halo / Supernova Aura behind "AI" */
+.kinetic-ai-aura {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: clamp(320px, 44vw, 680px);
+  height: clamp(320px, 44vw, 680px);
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: -1;
+  display: grid;
+  place-items: center;
+  will-change: transform, opacity;
+}
+
+.kinetic-ai-halo-core {
+  position: absolute;
+  inset: 14%;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.92) 0%,
+    color-mix(in srgb, var(--accent-primary) 72%, transparent) 28%,
+    color-mix(in srgb, var(--accent-secondary) 44%, transparent) 56%,
+    transparent 76%
+  );
+  will-change: transform, opacity;
+}
+
+.kinetic-ai-halo-ring {
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+  will-change: transform, opacity;
+}
+
+.kinetic-ai-halo-ring--inner {
+  inset: 12%;
+  border: 2.5px solid #ffffff;
+  box-shadow:
+    0 0 28px var(--accent-primary),
+    0 0 64px var(--accent-primary),
+    inset 0 0 36px var(--accent-primary);
+}
+
+.kinetic-ai-halo-ring--outer {
+  inset: 2%;
+  border: 1.5px dashed var(--accent-primary);
+  box-shadow:
+    0 0 42px var(--accent-secondary),
+    inset 0 0 42px var(--accent-secondary);
+}
+
+.kinetic-ai-rays {
+  position: absolute;
+  inset: -12%;
+  border-radius: 50%;
+  background: conic-gradient(
+    from 0deg,
+    transparent 0deg,
+    color-mix(in srgb, var(--accent-primary) 42%, transparent) 18deg,
+    transparent 38deg,
+    color-mix(in srgb, var(--accent-secondary) 38%, transparent) 72deg,
+    transparent 96deg,
+    color-mix(in srgb, var(--accent-primary) 46%, transparent) 132deg,
+    transparent 160deg,
+    color-mix(in srgb, var(--accent-secondary) 36%, transparent) 198deg,
+    transparent 224deg,
+    color-mix(in srgb, var(--accent-primary) 44%, transparent) 262deg,
+    transparent 292deg,
+    color-mix(in srgb, var(--accent-secondary) 40%, transparent) 328deg,
+    transparent 360deg
+  );
+  -webkit-mask-image: radial-gradient(circle, black 18%, transparent 70%);
+  mask-image: radial-gradient(circle, black 18%, transparent 70%);
+  will-change: transform;
+}
+
+/* 04 / Experience 3D Stage */
+.experience.section-pad {
+  background: rgba(5, 7, 15, 0.42) !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.experience-entry--0 {
+  background: radial-gradient(
+    circle at 24% 48%,
+    color-mix(in srgb, var(--accent-primary) 20%, rgba(12, 24, 56, 0.62)),
+    rgba(6, 10, 24, 0.56) 62%,
+    rgba(4, 6, 14, 0.64)
+  ) !important;
+}
+
+.experience-entry--1 {
+  background: radial-gradient(
+    circle at 22% 48%,
+    color-mix(in srgb, var(--accent-tertiary) 22%, rgba(40, 15, 44, 0.62)),
+    rgba(16, 8, 26, 0.56) 62%,
+    rgba(6, 4, 14, 0.64)
+  ) !important;
+}
+
+.experience-entry--2 {
+  background: radial-gradient(
+    circle at 22% 48%,
+    color-mix(in srgb, var(--accent-secondary) 24%, rgba(16, 29, 66, 0.62)),
+    rgba(8, 15, 36, 0.56) 62%,
+    rgba(4, 7, 18, 0.64)
+  ) !important;
+}
+
+.experience-entry:after,
+.experience-finale-line {
+  background: linear-gradient(90deg, var(--accent-primary), var(--accent-secondary)) !important;
+}
+
+.experience-first-intro .eyebrow,
+.experience-copy .experience-project,
+.experience-finale-kicker,
+.experience-finale h3 span,
+.experience-finale-company {
+  color: var(--accent-primary) !important;
+}
+
+/* 05 / Toolkit (Tech Stack) */
+.toolkit {
+  background: rgba(5, 8, 18, 0.46) !important;
+  color: #f4f7ff !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.toolkit .eyebrow {
+  color: var(--accent-primary) !important;
+}
+
+.toolkit-title h2 {
+  color: #f5f8ff !important;
+}
+
+.toolkit-title > p {
+  color: #b8c4e0 !important;
+}
+
+.toolkit-columns > div {
+  border-top-color: rgba(255, 255, 255, 0.16) !important;
+}
+
+.toolkit-columns span {
+  color: var(--accent-primary) !important;
+}
+
+.toolkit-columns p {
+  color: #eef3ff !important;
+}
+
+.skill-visual {
+  color: #8fa4d4 !important;
+  opacity: 0.72;
+}
+
+.skill-visual .skill-accent {
+  stroke: var(--accent-primary) !important;
+}
+
+.skill-visual .skill-accent-fill {
+  fill: color-mix(in srgb, var(--accent-primary) 45%, var(--accent-secondary)) !important;
+  stroke: var(--accent-primary) !important;
+}
+
+.toolkit-group:hover .skill-visual {
+  color: var(--accent-primary) !important;
+  opacity: 1;
+}
+
+/* 06 / Proof (Impact Telemetry) */
+.proof.section-pad {
+  background: radial-gradient(
+      60% 52% at 75% 88%,
+      color-mix(in srgb, var(--accent-primary) 16%, transparent),
+      transparent 80%
+    ),
+    rgba(5, 8, 18, 0.48) !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.proof .eyebrow {
+  position: relative;
+  z-index: 2;
+  color: var(--accent-primary) !important;
+}
+
+.proof-item strong i {
+  color: var(--accent-primary) !important;
+}
+
+.proof-chart {
+  z-index: 2;
+}
+
+.proof-chart-slot:first-of-type .proof-chart-bar {
+  background: linear-gradient(
+    color-mix(in srgb, var(--accent-primary) 88%, #fff),
+    color-mix(in srgb, var(--accent-primary) 45%, transparent) 55%,
+    rgba(0, 0, 0, 0.2)
+  ) !important;
+  border-color: var(--accent-primary) !important;
+}
+
+.proof-chart-bar:before {
+  background: #ffffff !important;
+}
+
+/* 07 / Credentials 3D Space */
+.credentials {
+  background: radial-gradient(
+      circle at 72% 48%,
+      color-mix(in srgb, var(--accent-primary) 14%, transparent),
+      transparent 58%
+    ),
+    rgba(5, 8, 18, 0.44) !important;
+  color: #f4f7ff !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.credentials:before {
+  display: none !important;
+}
+
+.credentials .eyebrow {
+  color: var(--accent-primary) !important;
+}
+
+.credentials h2 {
+  color: #f5f8ff !important;
+}
+
+.credential-record-index {
+  color: var(--accent-primary) !important;
+  border-bottom-color: rgba(255, 255, 255, 0.18) !important;
+}
+
+.credential-record-index i {
+  color: #94a3c8 !important;
+}
+
+.credential-record h3 {
+  color: #f5f8ff !important;
+}
+
+.credential-record p {
+  color: #d0dcf5 !important;
+}
+
+.credential-record small {
+  color: #98a7c8 !important;
+}
+
+.education {
+  border-top-color: rgba(255, 255, 255, 0.18) !important;
+}
+
+.education > span {
+  color: var(--accent-primary) !important;
+}
+
+.education h3 {
+  color: #f5f8ff !important;
+}
+
+.education p {
+  color: #98a7c8 !important;
+}
+
+.credentials-world-guide {
+  border-color: rgba(0, 240, 255, 0.18) !important;
+  background:
+    repeating-linear-gradient(0deg, transparent 0 119px, rgba(0, 240, 255, 0.06) 120px),
+    repeating-linear-gradient(90deg, transparent 0 139px, rgba(0, 240, 255, 0.06) 140px) !important;
+}
+
+.credential-inspection i {
+  border-color: var(--accent-primary) !important;
+}
+
+.credential-inspection small,
+.credentials-overview-label {
+  color: var(--accent-primary) !important;
+}
+
+/* 08 / Services & Handoff Bridge */
+.services.section-pad {
+  background: rgba(5, 8, 18, 0.48) !important;
+  color: #f4f7ff !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.services .eyebrow {
+  color: var(--accent-primary) !important;
+}
+
+.services .section-heading h2 .service-heading-first {
+  color: #f5f8ff !important;
+}
+
+.services .section-heading h2 .service-heading-second {
+  color: var(--accent-primary) !important;
+}
+
+.services .section-heading > p {
+  color: #b8c4e0 !important;
+}
+
+.service-rows {
+  border-top-color: rgba(255, 255, 255, 0.15) !important;
+}
+
+.service-lane {
+  border-bottom-color: rgba(255, 255, 255, 0.15) !important;
+}
+
+.service-lane-index {
+  color: var(--accent-primary) !important;
+}
+
+.service-lane h3 {
+  color: #f5f8ff !important;
+}
+
+.service-lane p {
+  color: #b8c4e0 !important;
+}
+
+.service-artifact-frame {
+  background: rgba(8, 14, 32, 0.58) !important;
+  border-color: rgba(0, 240, 255, 0.24) !important;
+}
+
+.service-artifact-line {
+  stroke: #8fa4d4 !important;
+}
+
+.service-artifact-accent,
+.service-handoff path {
+  stroke: var(--accent-primary) !important;
+}
+
+.service-artifact-block,
+.service-route-current,
+.service-spine span {
+  background: var(--accent-primary) !important;
+  fill: var(--accent-primary) !important;
+}
+
+.service-route-signal,
+.service-spine i,
+.service-route-node {
+  background: #060914 !important;
+  border-color: var(--accent-primary) !important;
+}
+
+/* 09 / Contact Portal */
+.contact {
+  background: rgba(5, 8, 18, 0.42) !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.contact-dark-field {
+  background: var(--contact-bg) !important;
+  opacity: 0.72;
+}
+
+.contact-final-period {
+  color: var(--accent-primary) !important;
+}
+
+.email-link:hover,
+.socials a:hover {
+  color: var(--accent-primary) !important;
+}
+
+/* ==========================================================================
+   Tablet & Mobile Responsive Polish (<= 1024px) — Upper Video Stage & Bottom Text
+   ========================================================================== */
+@media (max-width: 1024px) {
+  .hero.hero--webgl {
+    align-items: flex-end !important;
+    padding: 72px 6vw 54px !important;
+  }
+
+  .hero-video-frame--studio {
+    top: 56px !important;
+    bottom: auto !important;
+    left: 0 !important;
+    right: 0 !important;
+    width: 100% !important;
+    height: 52svh !important;
+  }
+
+  .hero-studio-scrim {
+    background: linear-gradient(
+      180deg,
+      rgba(4, 7, 18, 0.36) 0%,
+      rgba(4, 7, 18, 0.04) 16%,
+      rgba(4, 7, 18, 0.06) 38%,
+      rgba(5, 8, 20, 0.88) 54%,
+      #050814 64%,
+      #050814 100%
+    ) !important;
+  }
+
+  .hero.hero--webgl .hero-content {
+    width: 100% !important;
+    margin-top: auto !important;
+    padding-top: 46svh !important;
+  }
+
+  .hero-left-stage {
+    max-width: 100% !important;
+  }
+}
+
+@media (max-width: 700px) {
+  .hero.hero--webgl {
+    min-height: 100svh !important;
+    align-items: flex-end !important;
+    padding: 64px 6vw 48px !important;
+  }
+
+  .hero-video-frame--studio {
+    top: 50px !important;
+    bottom: auto !important;
+    left: 0 !important;
+    right: 0 !important;
+    width: 100% !important;
+    height: 46svh !important;
+  }
+
+  .hero.hero--webgl .hero-content {
+    padding-top: 43svh !important;
+    margin-top: auto !important;
+  }
+
+  .hero-left-stage {
+    max-width: 100% !important;
+  }
+
+  .hero.hero--webgl .hero-kicker {
+    font-size: 7.5px !important;
+    padding: 5px 10px;
+    margin-bottom: 10px !important;
+    max-width: 100%;
+  }
+
+  .hero.hero--webgl .hero-title-line--one {
+    font-size: clamp(34px, 9.6vw, 52px);
+    letter-spacing: -0.035em;
+  }
+
+  .hero.hero--webgl .hero-title-line--two {
+    font-size: clamp(46px, 12.8vw, 68px);
+    letter-spacing: -0.045em;
+    padding-left: 3.5vw;
+  }
+
+  .hero.hero--webgl .hero-bottom {
+    margin-top: 14px !important;
+    max-width: 100% !important;
+  }
+
+  .hero.hero--webgl .hero-bottom p {
+    font-size: 13px !important;
+    line-height: 1.52 !important;
+  }
+
+  .hero.hero--webgl .hero-bottom > div {
+    max-width: 96% !important;
+  }
+}
