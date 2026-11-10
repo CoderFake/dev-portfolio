@@ -74,7 +74,8 @@ dev-portfolio/
 ├── public/
 │   ├── images/                  # Chứa ảnh giải thưởng (certificates/), ảnh/logo dự án (projects/), avatar
 │   ├── videos/
-│   │   └── engineer-hero.mp4    # Video 3D Hero (1920x1080, 60fps, H.264)
+│   │   ├── engineer-hero.mp4    # Video 3D Hero Nam Developer (1920x1080, 60fps, H.264)
+│   │   └── engineer-female.mp4  # Video 3D Hero Nữ Developer (1920x1080, 60fps, H.264)
 │   ├── wasm/
 │   │   └── star_network_engine.wasm # Nhân vật lý Rust + WebAssembly SIMD128 đã biên dịch sẵn
 │   └── logo-cf.svg              # Logo thương hiệu trên thanh điều hướng & Favicon (có thể upload mới hoặc nhờ AI tự gen SVG)

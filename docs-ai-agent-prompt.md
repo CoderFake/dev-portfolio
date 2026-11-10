@@ -46,6 +46,10 @@ Hãy thực hiện chính xác theo trình tự 5 bước sau:
 
 ### Bước 3: Thay thế toàn bộ thông tin trong `vi.json`, `en.json` & `index.html`
 - Thay thế 100% thông tin mẫu hiện tại trong `src/locales/vi.json` (Tiếng Việt) và `src/locales/en.json` (Tiếng Anh) bằng thông tin từ CV của tôi theo đúng cấu trúc trong `docs-customization-schema.md`.
+- **Tự động chọn Video 3D Hero theo giới tính trong CV (`hero.videoSrc`)**:
+  - Dự án đã có sẵn 2 video 3D `60fps` được map sẵn quỹ đạo Three.js:
+    - Nếu chủ nhân CV là **Nam**: đặt `"videoSrc": "/videos/engineer-hero.mp4?v=60fps"`.
+    - Nếu chủ nhân CV là **Nữ**: đặt `"videoSrc": "/videos/engineer-female.mp4?v=60fps"`.
 - Giữ nguyên đầy đủ các key bắt buộc (`theme`, `meta`, `navbar`, `hero`, `about`, `projects`, `statement`, `experience`, `toolkit`, `proof`, `credentials`, `services`, `contact`).
 - Trong mục `statement.words`, giữ cấu trúc 5 từ (`build`, `design`, `code`, `with`, `ship`) sao cho từ khóa thứ 5 (`ship`, mặc định là `"AI"`) là từ nhấn mạnh nhất để nhận hiệu ứng hào quang phóng sáng (`.kinetic-ai-aura`).
 - Cập nhật thẻ `<title>` và `<meta name="description">` trong `index.html` theo họ tên và chức danh của tôi.

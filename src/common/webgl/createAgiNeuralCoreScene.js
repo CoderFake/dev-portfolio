@@ -277,7 +277,7 @@ export function createAgiNeuralCoreScene(canvas, initialColors, options = {}) {
 
   // Frame-measured face/head center trajectory (fx, fy in 1920x1080 video normalized coords)
   // across the entire 6.65s 60fps video from t = 0.0s to t = 6.65s
-  const VIDEO_FACE_KEYFRAMES = [
+  const MALE_VIDEO_FACE_KEYFRAMES = [
     { t: 0.0, fx: 0.722, fy: 0.31, scale: 0.92 },
     { t: 1.0, fx: 0.718, fy: 0.31, scale: 0.93 },
     { t: 2.0, fx: 0.692, fy: 0.315, scale: 0.96 },
@@ -291,14 +291,35 @@ export function createAgiNeuralCoreScene(canvas, initialColors, options = {}) {
     { t: 6.7, fx: 0.49, fy: 0.355, scale: 1.37 },
   ];
 
+  // Frame-measured trajectory for /videos/engineer-female.mp4 (6.65s 60fps speed-ramped)
+  const FEMALE_VIDEO_FACE_KEYFRAMES = [
+    { t: 0.0, fx: 0.712, fy: 0.285, scale: 0.9 },
+    { t: 1.0, fx: 0.718, fy: 0.288, scale: 0.9 },
+    { t: 2.0, fx: 0.678, fy: 0.295, scale: 0.94 },
+    { t: 2.5, fx: 0.652, fy: 0.302, scale: 0.98 },
+    { t: 3.0, fx: 0.618, fy: 0.32, scale: 1.04 },
+    { t: 3.5, fx: 0.578, fy: 0.345, scale: 1.14 },
+    { t: 4.0, fx: 0.532, fy: 0.38, scale: 1.24 },
+    { t: 4.5, fx: 0.502, fy: 0.395, scale: 1.32 },
+    { t: 5.0, fx: 0.482, fy: 0.415, scale: 1.36 },
+    { t: 5.5, fx: 0.478, fy: 0.42, scale: 1.37 },
+    { t: 6.7, fx: 0.478, fy: 0.42, scale: 1.37 },
+  ];
+
+  const getActiveKeyframes = () => {
+    const src = (videoEl?.currentSrc || videoEl?.getAttribute("src") || "").toLowerCase();
+    return src.includes("female") ? FEMALE_VIDEO_FACE_KEYFRAMES : MALE_VIDEO_FACE_KEYFRAMES;
+  };
+
   const sampleVideoTrajectory = (t) => {
-    if (t <= VIDEO_FACE_KEYFRAMES[0].t) return VIDEO_FACE_KEYFRAMES[0];
-    const last = VIDEO_FACE_KEYFRAMES[VIDEO_FACE_KEYFRAMES.length - 1];
+    const keyframes = getActiveKeyframes();
+    if (t <= keyframes[0].t) return keyframes[0];
+    const last = keyframes[keyframes.length - 1];
     if (t >= last.t) return last;
 
-    for (let i = 0; i < VIDEO_FACE_KEYFRAMES.length - 1; i += 1) {
-      const k0 = VIDEO_FACE_KEYFRAMES[i];
-      const k1 = VIDEO_FACE_KEYFRAMES[i + 1];
+    for (let i = 0; i < keyframes.length - 1; i += 1) {
+      const k0 = keyframes[i];
+      const k1 = keyframes[i + 1];
       if (t >= k0.t && t <= k1.t) {
         const alpha = (t - k0.t) / Math.max(0.0001, k1.t - k0.t);
         return {
