@@ -57,7 +57,13 @@ npm run preview
 
 ## 🤖 Hướng dẫn dùng ChatGPT / Claude để Tự động Cá nhân hóa từ CV & Deploy Vercel
 
-Dự án đi kèm bộ tài liệu `docs-*.md` được thiết kế chuẩn hóa cho **LLM & AI Coding Agents**. Bạn chỉ cần **tải lên (upload) file CV của bạn** kèm theo các file hướng dẫn dưới đây cho **ChatGPT, Claude, Cursor hoặc Antigravity**:
+### Bước 0 (Dành cho cả người dùng Non-Tech): Kết nối Plugin Vercel
+Trước khi gửi CV cho AI, bạn chỉ cần thực hiện 1 thao tác:
+1. Mở **ChatGPT** hoặc **Claude** (hoặc Cursor / Antigravity).
+2. Vào mục **Plugins** (hoặc **Connectors / Integrations**).
+3. Gõ tìm kiếm **`Vercel`** ➡️ Bấm **Kết nối (Connect / Sign in with Vercel)**.
+
+Sau đó, bạn chỉ cần **tải lên (upload) file CV của bạn** kèm theo các file hướng dẫn dưới đây cho **ChatGPT hoặc Claude**:
 
 | File tài liệu | Mục đích sử dụng |
 | :--- | :--- |

@@ -12,12 +12,17 @@ Dưới đây là 3 cách để **AI Agent (ChatGPT, Claude, Cursor, Antigravity
 
 ---
 
-## Cách 1: Deploy tự động qua AI Agent Plugin / MCP Server (Claude, ChatGPT, Cursor, Antigravity)
+## Cách 1 (Mặc định & Khuyên dùng cho Non-Tech): Kết nối Plugin Vercel trên ChatGPT / Claude
 
-Nếu bạn đã kết nối **Vercel Plugin / Vercel MCP Server** vào trình trợ lý AI của mình:
+Không cần biết lập trình hay gõ lệnh Terminal, bạn chỉ cần kết nối Plugin Vercel trực tiếp trên **ChatGPT** hoặc **Claude**:
 
-### 1. Thông số cấu hình chuẩn cung cấp cho Plugin
-Khi AI gọi tool của Vercel Plugin (ví dụ `vercel_deploy`, `create_deployment`, hoặc `link_project`), hãy truyền chính xác các tham số sau:
+### 1. Cách bật Plugin Vercel (3 thao tác)
+1. Mở **ChatGPT** hoặc **Claude**.
+2. Vào mục **Plugins** (hoặc **Connectors / Integrations**).
+3. Tìm kiếm từ khóa **`Vercel`** ➡️ Bấm **Kết nối (Connect)** và đăng nhập tài khoản Vercel của bạn.
+
+### 2. Thông số cấu hình chuẩn khi AI gọi Plugin Vercel
+Khi AI gọi tool của Vercel Plugin (ví dụ `vercel_deploy`, `create_deployment`, hoặc `link_project`), AI sẽ truyền chính xác các tham số sau:
 
 ```json
 {

@@ -15,11 +15,13 @@ AI sẽ tự động làm trọn gói từ A–Z (**thân thiện 100% với c�
 
 ## 1. Cách sử dụng nhanh (Copy & Paste cho ChatGPT / Claude)
 
-### Bước chuẩn bị trước khi gửi Prompt
-Đính kèm (Upload) vào khung chat của **ChatGPT / Claude / Cursor / Antigravity**:
-1. 📄 **File CV / Resume của bạn** (định dạng PDF, DOCX, Ảnh chụp hoặc Text) — **Bắt buộc**.
-2. 🖼️ *(Tùy chọn)* **Logo cá nhân** và **các ảnh chụp Giải thưởng / Chứng chỉ / Dự án** (nếu chưa đính kèm ngay, AI sẽ chủ động hỏi bạn ở Bước 1 hoặc tự generate cho bạn).
-3. 📘 Đính kèm 3 file hướng dẫn của dự án: `README.md`, `docs-customization-schema.md`, `docs-vercel-deploy.md`.
+### Bước chuẩn bị trước khi gửi Prompt (Cực kỳ đơn giản cho cả Non-Tech)
+1. 🔌 **Kết nối Plugin Vercel trên ChatGPT / Claude**:
+   - Trên **ChatGPT** hoặc **Claude** -> Vào mục **Plugins** (hoặc **Connectors / Integrations**) -> Tìm **`Vercel`** -> Bấm **Kết nối (Connect)** và đăng nhập tài khoản Vercel.
+2. 📄 **Đính kèm (Upload) vào khung chat**:
+   - **File CV / Resume của bạn** (định dạng PDF, DOCX, Ảnh chụp hoặc Text) — **Bắt buộc**.
+   - *(Tùy chọn)* **Logo cá nhân** và **các ảnh chụp Giải thưởng / Chứng chỉ / Dự án** (nếu chưa đính kèm ngay, AI sẽ chủ động hỏi bạn ở Bước 1 hoặc tự generate cho bạn).
+   - Đính kèm 3 file hướng dẫn của dự án: `README.md`, `docs-customization-schema.md`, `docs-vercel-deploy.md`.
 
 ### Prompt mẫu Copy-Paste gửi cho AI
 
@@ -63,10 +65,10 @@ Hãy thực hiện chính xác theo trình tự 5 bước sau:
   ```
 - Đảm bảo lệnh build hoàn tất với exit code `0`, thư mục `dist/` được sinh ra đầy đủ và không có lỗi cú pháp JSON.
 
-### Bước 5: Mặc định Tự động Deploy lên Vercel (Ưu tiên cho người dùng Non-Tech)
+### Bước 5: Mặc định Tự động Deploy lên Vercel qua Plugin (Ưu tiên cho người dùng Non-Tech)
 - **Mặc định luôn tiến hành deploy lên Vercel** ngay sau khi build xong để người dùng (đặc biệt là người dùng Non-Tech) nhận được link website chạy ngay:
-  - Nếu có **Vercel Plugin / Vercel MCP Server**: tự động gọi công cụ deploy với thư mục `dev-portfolio` (`framework: "vite"`, `buildCommand: "npm run build"`, `outputDirectory: "dist"`).
-  - Nếu chạy qua **Terminal / CLI**: tự động chạy `npx vercel deploy --prod --yes` (nếu máy chưa đăng nhập Vercel, hãy chạy `npx vercel login` và gửi đường link xác thực 1-click cho tôi bấm duyệt trên trình duyệt, sau đó tiếp tục deploy tự động).
+  - **Sử dụng Vercel Plugin**: Gọi trực tiếp công cụ của **Vercel Plugin** đã kết nối trên ChatGPT / Claude với thư mục `dev-portfolio` (`framework: "vite"`, `buildCommand: "npm run build"`, `outputDirectory: "dist"`).
+  - Nếu phát hiện người dùng chưa bật/kết nối Plugin Vercel, hãy hướng dẫn ngắn gọn: *"Bạn hãy vào mục **Plugins** trên ChatGPT / Claude -> Tìm **Vercel** -> Bấm **Kết nối (Connect)** để mình đẩy web lên tự động nhé!"* (Hoặc nếu đang ở môi trường Terminal Agent thì tự động chạy `npx vercel deploy --prod --yes`).
 - Cuối cùng, trả về **Link URL Production trên Vercel** kèm tóm tắt ngắn gọn dễ hiểu.
 ```
 
